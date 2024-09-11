@@ -1,0 +1,4250 @@
+fileFormatVersion: 2
+guid: b28084fc83015b343896215cd8ee817b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Michelangelo_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2213
+        width: 63
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e04b3bfc4790d64993d454fe6747633
+      internalID: -1236381297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 2226
+        width: 64
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9bb0ae46320c124eaa89a3f2d071df4
+      internalID: -1996909285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 2241
+        width: 109
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cfb2a49f5ff1b40b2f4007393e0dab
+      internalID: -995828154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_3
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 2283
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492431520c5b7454099417892935483f
+      internalID: 1713129478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 2217
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16798b4a86184f049b0622c0aa4bb288
+      internalID: -615546446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_5
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 2217
+        width: 111
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304c66bb9887e0a4a8b6717738c19f46
+      internalID: 1268190639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2149
+        width: 43
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c5cb7b3c3137046abf0559b15af946
+      internalID: 1141962957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 2150
+        width: 44
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea3b90364684f84aab1428c8f1ec66b
+      internalID: 1175155202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2149
+        width: 43
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f769b2e37d48b44c908dd23e5d9b6f5
+      internalID: 1519381520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 2149
+        width: 43
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e528fc2c2ff567d408b106b1103b4d04
+      internalID: -430659115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 2149
+        width: 56
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3e7b4a68b12f84cb4670fb9142bf8c
+      internalID: -1450986063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 2149
+        width: 60
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb41cea33946f544a1a61bc5a0805dc
+      internalID: 1585824427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2084
+        width: 40
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c239859b0bd00499a77d19767607e9
+      internalID: 1807787423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 2082
+        width: 32
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082358bc432c25d4ba101a324ecfd27d
+      internalID: -2075287257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 2082
+        width: 31
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5082c1b030ca7742baf6fb8bca93b04
+      internalID: 933424890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_15
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 2085
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1073095e87e544494db04a825396ad
+      internalID: -1493070719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_16
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 2085
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568206e7a18547a45bea33e22a328ab2
+      internalID: -976061856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_17
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 2085
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d882d064dbbfb41ad2bbff2526f2cf
+      internalID: -1920867174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_18
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 2085
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7103af563aeac4d93412c525b51ca1
+      internalID: -1068908746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_19
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 2084
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63c1fa259dd8f04d806d68bbdb0f988
+      internalID: -493157450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_20
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 2089
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b15540e3301e2c4ab841bc87467aa62
+      internalID: 808508903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_21
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 2081
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c9e55baacb34c4ab5da7e893f247be
+      internalID: -1278100015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_22
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 2081
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4b0a7d5e7df2f44afc9a59340f3208
+      internalID: 1076990361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_23
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1933
+        width: 45
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716e8e10b2f333248abc49b206a544be
+      internalID: -1783123096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_24
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2013
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a91c52b14a6f8046abd6e715baf3fe8
+      internalID: 1346280059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_25
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 2002
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a0b30d398a8dd44be2ccd03237ac82
+      internalID: 290736778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_26
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1999
+        width: 28
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107d76247db4c8e4ab9e46fec3ab6a7f
+      internalID: -1524278476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_27
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 2015
+        width: 56
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02270a98f59be0744bdf0f8c0f7be658
+      internalID: 523361131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_28
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1999
+        width: 45
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45dcd234e927a744ba016fcb4b4e2f3e
+      internalID: -723247791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_29
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 2005
+        width: 80
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f5e69df7c02de4fba20ba3eb9fb932
+      internalID: -188095210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2004
+        width: 41
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e4c79b10aa78f47a3343ed6e6c1329
+      internalID: -1151794002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_31
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 2000
+        width: 34
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b76a5c3a2d3b142822878048529faf
+      internalID: -1003766288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1942
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1550055dfab2c794d8ea3d46b06798a8
+      internalID: -1620980528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_33
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1950
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fbad5589bdb1b489b96e84f0c7f358
+      internalID: 547300370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_34
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1949
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344fbaee8b405d943b8dbce08d5d9a67
+      internalID: 1403094200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_35
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 1950
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863dfd64b8389c14ebb46327ef2f0404
+      internalID: -777950085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_36
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1841
+        width: 58
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4378052eb9bc146a9a3062d99e4e37
+      internalID: 590126909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_37
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1841
+        width: 59
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889c10cf67793b14797b9739cc61f2f6
+      internalID: 1869134865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_38
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1840
+        width: 78
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47061bc4610a1d4eb6711a167e9dc2d
+      internalID: -818307747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_39
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1841
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf926d9ecda941438e4bde004b63920
+      internalID: 1825467688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_40
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1841
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aed400a9ee5e1c4c8264044b248e98d
+      internalID: -1079121095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_41
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1880
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d026d5d6605a247af87c812d690968
+      internalID: 1206361132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_42
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1880
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82a75152ee8c6d409b949ce1b0b8143
+      internalID: 220373602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_43
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1865
+        width: 107
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5baffe1e6fc952644b0f57a10b60bfc5
+      internalID: 599465427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_44
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1865
+        width: 107
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7193ad00000c427429277b0aa2c9f6af
+      internalID: 488837171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_45
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1752
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a860c1a5732264bbaeeb294fa16253
+      internalID: -637745963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_46
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1752
+        width: 71
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af2308ef3200004bb87876465670330
+      internalID: -667318344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_47
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1797
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49883a2cd860a574398dac74aa6c2c27
+      internalID: -1850469244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_48
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1752
+        width: 81
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01aa7f8f822a5d64dac862f11b4415f4
+      internalID: -925191552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_49
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1636
+        width: 47
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac624611a92c10149ba3baedf4fdf377
+      internalID: 219802242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_50
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1662
+        width: 62
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c0f6dfd380e1c468962bded9155c01
+      internalID: 782400513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_51
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1698
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8ef8ea81a389a4c8c08b1632da8dd5
+      internalID: 1159877567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_52
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1644
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c6fc8296b4b1841a082a8abb6f1dcc
+      internalID: 349023309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_53
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1636
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d9a60f076396341b326f9ab49b992e
+      internalID: -364845137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_54
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1635
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468c13defb9442742ac6bac54e6750d9
+      internalID: -466558131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_55
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1643
+        width: 5
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6218ee814f130df4cb1d8e5c6fa14f61
+      internalID: 1245013728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_56
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1644
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3409f20ecea866846878c4a09c542045
+      internalID: 590272700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_57
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1570
+        width: 47
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa8316459ab007489ed74b866cbf6f9
+      internalID: 850769974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_58
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1570
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3af9dd5463e4db4bb91f4b53ec3bca0
+      internalID: 1958898291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_59
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1570
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bfbc0844e53f3408be48bd1f0e934c
+      internalID: -801329680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_60
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1607
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ef329b79c995346ba56c6c19e6187e
+      internalID: 354090907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_61
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1569
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cdcec0b5826a9429471013d717433c
+      internalID: -2030970960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_62
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1610
+        width: 27
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed2bb78bbef0844c864cc679541da36
+      internalID: 2146020312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_63
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1568
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a563d48056972b469dc9abc2c4a096a
+      internalID: -1970377253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_64
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1568
+        width: 40
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49dbec67f34480044bff15bfe9f38f6b
+      internalID: -685453359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_65
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1591
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c52e9a7b94374c4c9d37e9afbfcf158
+      internalID: 1667539941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_66
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1485
+        width: 29
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92e0347feeb7de4fa548fe35201b6a2
+      internalID: 740412493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_67
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1547
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebba118261a462439c8dd51e046ea8f
+      internalID: -995727484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_68
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1543
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18478ae7a651b32429adcbee88d76e33
+      internalID: 1355184157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_69
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1530
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714b7fc08c256e14a828bf26a3f8b0d0
+      internalID: -1945038061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_70
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1485
+        width: 73
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ed97b3c75759e409d938dfaeaad985
+      internalID: -802047121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_71
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1480
+        width: 36
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40eb5909f9d0f9b4a8133073e8bc1f03
+      internalID: -2026991249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_72
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1485
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0edfc80c03ec7824caf99b2834236bf9
+      internalID: 1031082703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_73
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1524
+        width: 23
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21108a7480c533745b17e3c675ab4084
+      internalID: 1900634708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_74
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1491
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9655cd0a25477c40976a6acc1bb3a85
+      internalID: 747542769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_75
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1493
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a615f7a9b99644d86b2cc40dbfdac7
+      internalID: -720035946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_76
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1396
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2462d5af4f1f65448219ac78dde3fbe
+      internalID: -1149329131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_77
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1396
+        width: 68
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9889dde80d8b30647a79ed3e3ec3dd49
+      internalID: 962800749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_78
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1396
+        width: 103
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ba87961fb5b1640bb216cb3aa05e30
+      internalID: -2024274494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_79
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1396
+        width: 94
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb14ae7edaca3e47ae665a5ba45e3e4
+      internalID: 352567172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_80
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1312
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8121384cab44b4242ad1504390a05447
+      internalID: -1740300847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_81
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1331
+        width: 53
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b210c4d22e0fb084ead2616a16746856
+      internalID: -454276870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_82
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1309
+        width: 72
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0965b4e33b7c7e44d8239f8131dd6290
+      internalID: 798403345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_83
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1315
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add3c94eba3c6ea47a17076551ad48c7
+      internalID: -610563249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_84
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1290
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d86be8589aa1342b93a37aab78c7bf
+      internalID: -180503154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_85
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1290
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5f03e7a0ec8fa40bbf442543fcecb4
+      internalID: -1353275043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_86
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1295
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce04ccf1cc8f8094f85fd34c47710aca
+      internalID: -1896892921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_87
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1195
+        width: 38
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4f3558ecb3e434dabe813073c29133
+      internalID: 1842934643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_88
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1209
+        width: 34
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e9e9219a2d7a34b989c9f01562ef7c
+      internalID: 1334144210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_89
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1225
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7b63bfabe40a44da2bc9e87149c315
+      internalID: 1516190550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_90
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1213
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6263364a562e4b47930f7239b297adb
+      internalID: -1807306153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_91
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1180
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7d3295a549cf943be7944ef9d9a70f
+      internalID: -148559810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_92
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1181
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7463dcc21b055dc4693385a6b1dff55b
+      internalID: -1779577409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_93
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1185
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4860c226a6079b4983f1b7a530bd47a
+      internalID: 404823549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_94
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1184
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c13180ad10a7b47aab7798c848820c
+      internalID: 259280953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_95
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1088
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848e5f7638466f443af29ff964b515cb
+      internalID: -1580422182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_96
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1089
+        width: 70
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077c9b3fd932b5549ab4313a51eb783a
+      internalID: 1377974773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_97
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1089
+        width: 74
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5fb3ce41a6391042b232d41ff88596a
+      internalID: 1853563914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_98
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1088
+        width: 103
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba08df7740bee1047b20b1dff40000c6
+      internalID: 1765886839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_99
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 991
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007307086b493bc4aa6d598c255ee7fb
+      internalID: 1929085398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_100
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 994
+        width: 77
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909c2158e023d7e4fb5fd102c2177810
+      internalID: -1661503572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_101
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 994
+        width: 44
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9279388f23e57c419d483a4d8158a8e
+      internalID: 1398941113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_102
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 993
+        width: 82
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99cac16f26ce5684897ffc5008b3d98e
+      internalID: 261200263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_103
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 906
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5203b8f9f06a39f4192bb7152d9a3287
+      internalID: -303107063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_104
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 907
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a199fbf7f4bdc04c98e5f3cf4864574
+      internalID: -1436611627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_105
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 950
+        width: 54
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34863c710fc69e040b970e6765db2687
+      internalID: 1826274697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_106
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 905
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31179ee5cf3a88e468ab83d68f8ec799
+      internalID: 1403417357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_107
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 835
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04a8500fb8a9514ab12141b773737af
+      internalID: 667148195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_108
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 830
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c3b3e8e77948448b210b46db76acfe
+      internalID: -1274364121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_109
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 831
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607db8b1669ae6941853b3e966f8c1d4
+      internalID: 1649418515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_110
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 833
+        width: 45
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715b1e12e799d9d41aeb8512ba803a7d
+      internalID: -1744923237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_111
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 834
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c6ef9f91e9e5e4c97dcfa2683c2b93
+      internalID: 2032396032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_112
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 826
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87736774c667dd4594c8170736bf57d
+      internalID: -1196309541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_113
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 763
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939d51770b00b9e43b9a7c57a02a00a0
+      internalID: -344808848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_114
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 762
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607534dd319c32b4a938fb2ac382c1c7
+      internalID: 1828108027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_115
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 763
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0ecf33ecd08cc49ab487407b6fcc2a
+      internalID: 615480706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_116
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 763
+        width: 70
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1a245ae2e9ce14b89d0eade71bc14b
+      internalID: -651469900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_117
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 758
+        width: 79
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843954f3481082447b769e15e09e4a4e
+      internalID: 1090348673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_118
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 759
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0237fdf3ae1b3d54bbf4868d4598b068
+      internalID: -868615439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_119
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 686
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644878319354d9246ba1e0aa9b10bc9b
+      internalID: 1200172640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_120
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 687
+        width: 72
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f185615d2a28e4c94c571987c1afbd
+      internalID: 1041915685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_121
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 690
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2438d5cff4c53f34497ce6050265cd65
+      internalID: -999493663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_122
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 599
+        width: 33
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d588722dca5ba4aa80a7e45b1c248e
+      internalID: -173874134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_123
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 599
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4c28bbc3ad7c640a80ed3779a1a5c5
+      internalID: -1127261281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_124
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 607
+        width: 33
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f68f72a9fb349478dd9bf48ff172ab
+      internalID: -1942475613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_125
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 611
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c2987534a632545b7694f62701ad12
+      internalID: -1601668282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_126
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 600
+        width: 69
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af6240aa7b37494d853e5c596232574
+      internalID: -890325015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_127
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 600
+        width: 69
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0f46cbe3ea05c4a838e22eda76beda
+      internalID: 1169781626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_128
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 600
+        width: 68
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1db5fe6c1fee0479d537c4179dcbd0
+      internalID: -1589544169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_129
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 599
+        width: 25
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b889fcaf26d92ca40bf813f806baa669
+      internalID: -1176658683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_130
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 599
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb411f26320fc44459d4f079b2feb74e
+      internalID: 1691778799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_131
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 535
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292772543cad2e74f990597a8de620d1
+      internalID: 1628541402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_132
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 535
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f00388f1bbf7444a3efaf4f1077382
+      internalID: 1523204695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_133
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 535
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43a6e0fcbc573945a4f23cc1bc58770
+      internalID: -356211537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_134
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 535
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c41a4e895df27409167cd3a74bcef0
+      internalID: 1488188669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_135
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 464
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc18c4ee12195240902b55f8f9848d7
+      internalID: -1483364305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_136
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 468
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e86e9d6352aadf4989a552ed7042831
+      internalID: 80251366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_137
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 393
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a45c49f78ec8214394c48a95c651bc0
+      internalID: 254306763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_138
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 393
+        width: 51
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa00de6597a9aef48858317e4ace42fc
+      internalID: -1842826225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_139
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 395
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd449c8be96c9b4f97afb0e6f340fd3
+      internalID: 1548203228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_140
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 392
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c58ee5f960495d47b8d5949379790f3
+      internalID: -294369531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_141
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 308
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9302451ce1931d141b20ee0efcd0a41e
+      internalID: 451807097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_142
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 327
+        width: 39
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee622267309efc84d8b4b81f91966d06
+      internalID: -866986635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_143
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 341
+        width: 102
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89ca4cf52d205c439fc53a5b49f2290
+      internalID: 1112289234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_144
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 303
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f107ec268a410104289db918401d3d0f
+      internalID: 1163377885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_145
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 237
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb83d3e60635f044f9f970a9d6fb31d6
+      internalID: -307734352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_146
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 237
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519c14bd0e993c24fb7ca81fd2e04695
+      internalID: -994989129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_147
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 237
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6418baeee6883e24a8017ffe2bbcc791
+      internalID: 240458064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_148
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 229
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dea57d6599f8c249aa04cf9278c6903
+      internalID: 567536773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_149
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 158
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a6c700bac49d046a511e5f15f9e99c
+      internalID: -502250841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_150
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 177
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64fb9c299f43b274f9a1551736fc0d88
+      internalID: -706562201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_151
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 177
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1432d1fcc29070418b58503cc1c7b14
+      internalID: 2059639393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_152
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 168
+        width: 65
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6203a486bda329489aa57fdb5899f07
+      internalID: -1251437196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_153
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 109
+        width: 40
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0dbb1fb2c01172489304aa1583c0977
+      internalID: 1461463224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_154
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 156
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f4f53a42933f44cb2301d4c2c126cf
+      internalID: 999829563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_155
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 156
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9289c128856c27043b2e2d79e921b256
+      internalID: 1957728524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_156
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 152
+        width: 30
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6985fac8dd3f78b45bdbe77d08c3f3bd
+      internalID: 1905703594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_157
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 168
+        width: 56
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f5a4338dc88c94d9a3d6a457ba5f7c
+      internalID: 926907397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_158
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 152
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df0939d73f2d6847a71d238db793b8b
+      internalID: -1056795657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_159
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 156
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b86aca71ca96c488a440003060d142
+      internalID: 878383406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_160
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 156
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1596b434cfd993e4494892b0782662ed
+      internalID: -1196090974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_161
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 153
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fce8f6f9d3b2b74898c8c2146c4c7ed
+      internalID: -817906056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_162
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 133
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43651c8582fb97418cd0314f6fb7247
+      internalID: -1843149048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_163
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 50
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b49c9fadf192a4fb1c56add9d240d6
+      internalID: -950695783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_164
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 86
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15add78dbc701fc4f9420f9c6e88562c
+      internalID: 1734797483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_165
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 79
+        width: 16
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c851ec93facd441bfe35dabb89cfbd
+      internalID: 1986337039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_166
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 96
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a860b4c268e0340ab824593bccb683
+      internalID: 2061856890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_167
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 50
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a50b24bca83d440afbacf20de9081f
+      internalID: -553225611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_168
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 72
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e716949ee21ab3a4b8d0824c6cc488f6
+      internalID: -321826943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_169
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 50
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34cc8b6e136d0984383d6ae0c6d3d64d
+      internalID: 1216605781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_170
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 50
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1b45e4f4ed2cf41be8b9b4beeac760
+      internalID: -2029474672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_171
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 50
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a97aa7e40637be43a5f3910493198c1
+      internalID: -666337625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_172
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 50
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7c8555d3079884d8a82a106413975e
+      internalID: -1759384882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_173
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 50
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3722f8d151e896408463a28c616d4f1
+      internalID: 694937187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_174
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 50
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4eaf41bbc2daa4db683309b7ffea43
+      internalID: 628566750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_175
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 54
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9610b849f9cb9dd40bd225dd1db500f2
+      internalID: 548437787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_176
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 54
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6f416406d62a449a6df1e52fe2a796
+      internalID: -945918325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_177
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 54
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fbc0e4d17d0ef4ab274f608dc3b14f
+      internalID: -1431713708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_178
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 54
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de631ef51893b4747a306f23d882d8fc
+      internalID: -1038774130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_179
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 54
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fb8753a84554a468ec615e25a9f110
+      internalID: 1668658745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_180
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 54
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73ccafb34f9aa04c8103c187fa199eb
+      internalID: 1086506110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_181
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e10747c65c2f4b4cb22ac78bc5320ee
+      internalID: -1125755264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_182
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 11
+        width: 60
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea22314e4b56cf64c9137590ef75efc1
+      internalID: -2114344496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_183
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 11
+        width: 60
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc071a5c0889294a820626c42e0c98c
+      internalID: -1001364649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_184
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 11
+        width: 49
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceda40858dc8fca44a063a5147bdc7b0
+      internalID: -1930151484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_185
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 11
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631844657d0b1af4e97bf0043dbf02a3
+      internalID: 1665486492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_186
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 11
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d2858b177d4e740bcae357884f394e
+      internalID: 1561193102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Michelangelo_187
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 11
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4213ac893603d49b2ef7163abb583c
+      internalID: 219566942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Michelangelo_0: -1236381297
+      Michelangelo_1: -1996909285
+      Michelangelo_100: -1661503572
+      Michelangelo_101: 1398941113
+      Michelangelo_102: 261200263
+      Michelangelo_103: -303107063
+      Michelangelo_104: -1436611627
+      Michelangelo_105: 1826274697
+      Michelangelo_106: 1403417357
+      Michelangelo_107: 667148195
+      Michelangelo_108: -1274364121
+      Michelangelo_109: 1649418515
+      Michelangelo_110: -1744923237
+      Michelangelo_111: 2032396032
+      Michelangelo_112: -1196309541
+      Michelangelo_113: -344808848
+      Michelangelo_114: 1828108027
+      Michelangelo_115: 615480706
+      Michelangelo_116: -651469900
+      Michelangelo_117: 1090348673
+      Michelangelo_118: -868615439
+      Michelangelo_119: 1200172640
+      Michelangelo_120: 1041915685
+      Michelangelo_121: -999493663
+      Michelangelo_122: -173874134
+      Michelangelo_123: -1127261281
+      Michelangelo_124: -1942475613
+      Michelangelo_125: -1601668282
+      Michelangelo_126: -890325015
+      Michelangelo_127: 1169781626
+      Michelangelo_128: -1589544169
+      Michelangelo_129: -1176658683
+      Michelangelo_130: 1691778799
+      Michelangelo_131: 1628541402
+      Michelangelo_132: 1523204695
+      Michelangelo_133: -356211537
+      Michelangelo_134: 1488188669
+      Michelangelo_135: -1483364305
+      Michelangelo_136: 80251366
+      Michelangelo_137: 254306763
+      Michelangelo_138: -1842826225
+      Michelangelo_139: 1548203228
+      Michelangelo_140: -294369531
+      Michelangelo_141: 451807097
+      Michelangelo_142: -866986635
+      Michelangelo_143: 1112289234
+      Michelangelo_144: 1163377885
+      Michelangelo_145: -307734352
+      Michelangelo_146: -994989129
+      Michelangelo_147: 240458064
+      Michelangelo_148: 567536773
+      Michelangelo_149: -502250841
+      Michelangelo_15: -1493070719
+      Michelangelo_150: -706562201
+      Michelangelo_151: 2059639393
+      Michelangelo_152: -1251437196
+      Michelangelo_153: 1461463224
+      Michelangelo_154: 999829563
+      Michelangelo_155: 1957728524
+      Michelangelo_156: 1905703594
+      Michelangelo_157: 926907397
+      Michelangelo_158: -1056795657
+      Michelangelo_159: 878383406
+      Michelangelo_16: -976061856
+      Michelangelo_160: -1196090974
+      Michelangelo_161: -817906056
+      Michelangelo_162: -1843149048
+      Michelangelo_163: -950695783
+      Michelangelo_164: 1734797483
+      Michelangelo_165: 1986337039
+      Michelangelo_166: 2061856890
+      Michelangelo_167: -553225611
+      Michelangelo_168: -321826943
+      Michelangelo_169: 1216605781
+      Michelangelo_17: -1920867174
+      Michelangelo_170: -2029474672
+      Michelangelo_171: -666337625
+      Michelangelo_172: -1759384882
+      Michelangelo_173: 694937187
+      Michelangelo_174: 628566750
+      Michelangelo_175: 548437787
+      Michelangelo_176: -945918325
+      Michelangelo_177: -1431713708
+      Michelangelo_178: -1038774130
+      Michelangelo_179: 1668658745
+      Michelangelo_18: -1068908746
+      Michelangelo_180: 1086506110
+      Michelangelo_181: -1125755264
+      Michelangelo_182: -2114344496
+      Michelangelo_183: -1001364649
+      Michelangelo_184: -1930151484
+      Michelangelo_185: 1665486492
+      Michelangelo_186: 1561193102
+      Michelangelo_187: 219566942
+      Michelangelo_19: -493157450
+      Michelangelo_2: -995828154
+      Michelangelo_20: 808508903
+      Michelangelo_21: -1278100015
+      Michelangelo_22: 1076990361
+      Michelangelo_23: -1783123096
+      Michelangelo_24: 1346280059
+      Michelangelo_25: 290736778
+      Michelangelo_26: -1524278476
+      Michelangelo_27: 523361131
+      Michelangelo_28: -723247791
+      Michelangelo_29: -188095210
+      Michelangelo_3: 1713129478
+      Michelangelo_30: -1151794002
+      Michelangelo_31: -1003766288
+      Michelangelo_32: -1620980528
+      Michelangelo_33: 547300370
+      Michelangelo_34: 1403094200
+      Michelangelo_35: -777950085
+      Michelangelo_36: 590126909
+      Michelangelo_37: 1869134865
+      Michelangelo_38: -818307747
+      Michelangelo_39: 1825467688
+      Michelangelo_4: -615546446
+      Michelangelo_40: -1079121095
+      Michelangelo_41: 1206361132
+      Michelangelo_42: 220373602
+      Michelangelo_43: 599465427
+      Michelangelo_44: 488837171
+      Michelangelo_45: -637745963
+      Michelangelo_46: -667318344
+      Michelangelo_47: -1850469244
+      Michelangelo_48: -925191552
+      Michelangelo_49: 219802242
+      Michelangelo_5: 1268190639
+      Michelangelo_50: 782400513
+      Michelangelo_51: 1159877567
+      Michelangelo_52: 349023309
+      Michelangelo_53: -364845137
+      Michelangelo_54: -466558131
+      Michelangelo_55: 1245013728
+      Michelangelo_56: 590272700
+      Michelangelo_57: 850769974
+      Michelangelo_58: 1958898291
+      Michelangelo_59: -801329680
+      Michelangelo_60: 354090907
+      Michelangelo_61: -2030970960
+      Michelangelo_62: 2146020312
+      Michelangelo_63: -1970377253
+      Michelangelo_64: -685453359
+      Michelangelo_65: 1667539941
+      Michelangelo_66: 740412493
+      Michelangelo_67: -995727484
+      Michelangelo_68: 1355184157
+      Michelangelo_69: -1945038061
+      Michelangelo_70: -802047121
+      Michelangelo_71: -2026991249
+      Michelangelo_72: 1031082703
+      Michelangelo_73: 1900634708
+      Michelangelo_74: 747542769
+      Michelangelo_75: -720035946
+      Michelangelo_76: -1149329131
+      Michelangelo_77: 962800749
+      Michelangelo_78: -2024274494
+      Michelangelo_79: 352567172
+      Michelangelo_80: -1740300847
+      Michelangelo_81: -454276870
+      Michelangelo_82: 798403345
+      Michelangelo_83: -610563249
+      Michelangelo_84: -180503154
+      Michelangelo_85: -1353275043
+      Michelangelo_86: -1896892921
+      Michelangelo_87: 1842934643
+      Michelangelo_88: 1334144210
+      Michelangelo_89: 1516190550
+      Michelangelo_90: -1807306153
+      Michelangelo_91: -148559810
+      Michelangelo_92: -1779577409
+      Michelangelo_93: 404823549
+      Michelangelo_94: 259280953
+      Michelangelo_95: -1580422182
+      Michelangelo_96: 1377974773
+      Michelangelo_97: 1853563914
+      Michelangelo_98: 1765886839
+      Michelangelo_99: 1929085398
+      Michelangelo_Idle_1: 1141962957
+      Michelangelo_Idle_2: 1175155202
+      Michelangelo_Idle_3: 1519381520
+      Michelangelo_Idle_4: -430659115
+      Michelangelo_Idle_5: -1450986063
+      Michelangelo_Idle_6: 1585824427
+      Michelangelo_Walk_1: 1807787423
+      Michelangelo_Walk_2: -2075287257
+      Michelangelo_Walk_3: 933424890
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

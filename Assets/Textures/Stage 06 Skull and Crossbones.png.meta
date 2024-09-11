@@ -1,0 +1,1500 @@
+fileFormatVersion: 2
+guid: 7677017202c1c4a4cb6f156fbb4ea435
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OceanBackground
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 336
+        width: 879
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a940e4437ae0b39478a8d9141053feea
+      internalID: -332658305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_1
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 437
+        width: 76
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2334c7c47b02141822184d3db2df72
+      internalID: 1053969071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_2
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 361
+        width: 70
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb9a162656a5db4bbf53eae2e4047d1
+      internalID: 1643221851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_3
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 360
+        width: 70
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc78f980d07f41419a447a0adb1b743
+      internalID: -751251777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_4
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 360
+        width: 70
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea990c08463b7d4baa68a33fd8ed0ef
+      internalID: 839678065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_5
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 368
+        width: 64
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b9005d556f82a4197b5efdc9b1aeb9
+      internalID: -1613758149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_6
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 355
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556ba9e1c0a10624a896ce5194379cb1
+      internalID: 2031568990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipStage
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 75
+        width: 1726
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb421f95fc8ce442b0dd9b8a70b8623
+      internalID: 1752651904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_8
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 38
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293774f8fcaa0ff42a51ff719ca903aa
+      internalID: -1486752722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_9
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 38
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f56cc950bfd3b4d96378215972f46e
+      internalID: -1024211822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_10
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 38
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c3b591c02b78b47a9a56cc7db4b621
+      internalID: -392691372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_11
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 38
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e003caf72b00540bf2f8fed03a050c
+      internalID: -686866545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_12
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 38
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4723decb52052c418a4ea13afe327cd
+      internalID: 1535927250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_13
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 38
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5e77a719dd1c84f91184f00e52f020
+      internalID: -312522232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_14
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea922d73b5b34cd428d27f3ace8c75ad
+      internalID: -1783430077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_15
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 38
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670cbd7d1255e8249b7dad66056cd575
+      internalID: -671291086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_16
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 38
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8a50425c48c114da50551e5ae10db9
+      internalID: 118539322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_17
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1973ef9b2e3d23e47bd442f6cf5f5b7f
+      internalID: 1001709512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_18
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00742d1cd2d1374cb5f6cca54c96a0d
+      internalID: -1050775764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_19
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 38
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5351d763e7a824eabae499930f620d
+      internalID: 1036246604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_20
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 38
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6115db48333e7f4fa25eb976ff10958
+      internalID: 1977818729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_21
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 38
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51985c5b2331a824691cad84a4ade357
+      internalID: 1267226327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_22
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 38
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8585deeab6cb3084a8a21ffee811b906
+      internalID: -1231896873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_23
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 38
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7ad512d57eb3b42bd7ba6f3a59f7f4
+      internalID: 1929108913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_24
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 38
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef635befca3bd9845b39802c8cdd1a46
+      internalID: -836148157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_25
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c296ef0440cb043962f5492885f803
+      internalID: -1655942312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_26
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 22
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97178e1c332b23842873db35007deff4
+      internalID: 743863148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_27
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3914daa252e6b47b7047ef509cd54e
+      internalID: -1327577928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_28
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984647a509d4e4e43a5a110deb7f6831
+      internalID: -1685700316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_29
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 38
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80099935b6e4af347b1ea458528e0569
+      internalID: -6900747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_30
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 38
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a1f483631292242b6e36a683bba2d4
+      internalID: -2093443608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_31
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 38
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920830d1c8ef774499ee4ba98065905a
+      internalID: -1504783964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_32
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10398c5989703534699dcbc59cc46e80
+      internalID: -1589411822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_33
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d19b519de26f164ea27d598a392c264
+      internalID: 945188235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_34
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992765f985901164c8fde9a2348e09f3
+      internalID: -368167374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_35
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 38
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bc5ea42d83eb54683ac4077170af23
+      internalID: 211363201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_36
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ec4168fd7c8824698ad39425e5acfc
+      internalID: -1038407451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_37
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ede22b6939b1c4cb080cbc6c5a00e1
+      internalID: -1723759648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_38
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec03345d970fd5544b0ed7e6abfa8d65
+      internalID: 259927729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_39
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0c7b6ee1d98a045b7aff9c409caa46
+      internalID: -999279841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_40
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 22
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d737c29d601e6924084e331d9d48972b
+      internalID: 297260654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_41
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 22
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b339c96bf91048c41b0db1287012a109
+      internalID: -1543684326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_42
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 22
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc26b41dd2342149a3e83658f1482ea
+      internalID: 608610509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_43
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 22
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4c2b6ffbeb26948b70e1efc02f688e
+      internalID: -561394282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_44
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 18
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d466c6af074a67a468bedf2399d44eb6
+      internalID: -1544777090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_45
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 22
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d0b2814c9b0a945af0fab6a76105e2
+      internalID: -1436238566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_46
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 22
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0602ce0c31b39224d8cd49e2955cd028
+      internalID: -1437170741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_47
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 22
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7019386d901b04a87c941baa7b356d
+      internalID: 586296469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_48
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 22
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef77defd5dc60245a95fa2052fb0637
+      internalID: 224015913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_49
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 22
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38496f0f7619a441938053c02e103b9
+      internalID: -946195821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_50
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 22
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b90b963f16de0e479256cf2b3550794
+      internalID: -1215113784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_51
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 18
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a2156503177f041abc039469b3d358
+      internalID: 1025643963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_52
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 18
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e33e985d2ef7fa4580b5c207920ccec
+      internalID: 2135955400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_53
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 22
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb50ca7cafa7bfb43b70f98261824c39
+      internalID: -173449601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_54
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 22
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34895ba11b6a5ad489767122e6d22fea
+      internalID: -1199083168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_55
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 22
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13f45dd82c512040a071eb869708533
+      internalID: 2072799119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_56
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 18
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697c333fe467c2e4eaa6b8cc147ce423
+      internalID: 1965466215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_57
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 22
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ce5a7d7eec16c4eb17ea964cd24de8
+      internalID: -473421208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_58
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 18
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b414b69cf1e44e94294eadef2a28f133
+      internalID: 727280184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_59
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 22
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0016107b12f4c254cb1ab40eaa51832d
+      internalID: -1564825225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_60
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 22
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea31075890ae7848b966ba5208d35a1
+      internalID: 253476824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_61
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 22
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354eebbad57c8934a9beac26f4f58f4c
+      internalID: -1989860521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 06 Skull and Crossbones_62
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 22
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69520838653235449b327779fc5eb6f3
+      internalID: 262158866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      OceanBackground: -332658305
+      ShipStage: 1752651904
+      Stage 06 Skull and Crossbones_1: 1053969071
+      Stage 06 Skull and Crossbones_10: -392691372
+      Stage 06 Skull and Crossbones_11: -686866545
+      Stage 06 Skull and Crossbones_12: 1535927250
+      Stage 06 Skull and Crossbones_13: -312522232
+      Stage 06 Skull and Crossbones_14: -1783430077
+      Stage 06 Skull and Crossbones_15: -671291086
+      Stage 06 Skull and Crossbones_16: 118539322
+      Stage 06 Skull and Crossbones_17: 1001709512
+      Stage 06 Skull and Crossbones_18: -1050775764
+      Stage 06 Skull and Crossbones_19: 1036246604
+      Stage 06 Skull and Crossbones_2: 1643221851
+      Stage 06 Skull and Crossbones_20: 1977818729
+      Stage 06 Skull and Crossbones_21: 1267226327
+      Stage 06 Skull and Crossbones_22: -1231896873
+      Stage 06 Skull and Crossbones_23: 1929108913
+      Stage 06 Skull and Crossbones_24: -836148157
+      Stage 06 Skull and Crossbones_25: -1655942312
+      Stage 06 Skull and Crossbones_26: 743863148
+      Stage 06 Skull and Crossbones_27: -1327577928
+      Stage 06 Skull and Crossbones_28: -1685700316
+      Stage 06 Skull and Crossbones_29: -6900747
+      Stage 06 Skull and Crossbones_3: -751251777
+      Stage 06 Skull and Crossbones_30: -2093443608
+      Stage 06 Skull and Crossbones_31: -1504783964
+      Stage 06 Skull and Crossbones_32: -1589411822
+      Stage 06 Skull and Crossbones_33: 945188235
+      Stage 06 Skull and Crossbones_34: -368167374
+      Stage 06 Skull and Crossbones_35: 211363201
+      Stage 06 Skull and Crossbones_36: -1038407451
+      Stage 06 Skull and Crossbones_37: -1723759648
+      Stage 06 Skull and Crossbones_38: 259927729
+      Stage 06 Skull and Crossbones_39: -999279841
+      Stage 06 Skull and Crossbones_4: 839678065
+      Stage 06 Skull and Crossbones_40: 297260654
+      Stage 06 Skull and Crossbones_41: -1543684326
+      Stage 06 Skull and Crossbones_42: 608610509
+      Stage 06 Skull and Crossbones_43: -561394282
+      Stage 06 Skull and Crossbones_44: -1544777090
+      Stage 06 Skull and Crossbones_45: -1436238566
+      Stage 06 Skull and Crossbones_46: -1437170741
+      Stage 06 Skull and Crossbones_47: 586296469
+      Stage 06 Skull and Crossbones_48: 224015913
+      Stage 06 Skull and Crossbones_49: -946195821
+      Stage 06 Skull and Crossbones_5: -1613758149
+      Stage 06 Skull and Crossbones_50: -1215113784
+      Stage 06 Skull and Crossbones_51: 1025643963
+      Stage 06 Skull and Crossbones_52: 2135955400
+      Stage 06 Skull and Crossbones_53: -173449601
+      Stage 06 Skull and Crossbones_54: -1199083168
+      Stage 06 Skull and Crossbones_55: 2072799119
+      Stage 06 Skull and Crossbones_56: 1965466215
+      Stage 06 Skull and Crossbones_57: -473421208
+      Stage 06 Skull and Crossbones_58: 727280184
+      Stage 06 Skull and Crossbones_59: -1564825225
+      Stage 06 Skull and Crossbones_6: 2031568990
+      Stage 06 Skull and Crossbones_60: 253476824
+      Stage 06 Skull and Crossbones_61: -1989860521
+      Stage 06 Skull and Crossbones_62: 262158866
+      Stage 06 Skull and Crossbones_8: -1486752722
+      Stage 06 Skull and Crossbones_9: -1024211822
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
