@@ -62,7 +62,8 @@ public class PlayerMovement : MonoBehaviour
         }else
         {
             Vector3 deltaMov = transform.position - m_InitialPos;
-            if (deltaMov.y < 0.5f) deltaMov.y = 0f;
+            Debug.Log(deltaMov.y);
+            if (deltaMov.magnitude == 0f) deltaMov.y = 0f;
             m_FloorMovement.Move(deltaMov.x, deltaMov.y);
         } 
         m_InitialPos = transform.position;
