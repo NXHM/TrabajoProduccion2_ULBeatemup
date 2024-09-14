@@ -17,5 +17,10 @@ public class PlayerInput : MonoBehaviour
         float movY = Input.GetAxis("Vertical");
 
         m_PlayerMovement.Move(movX, movY);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            m_PlayerMovement.Jump();
+        }
     }
 }

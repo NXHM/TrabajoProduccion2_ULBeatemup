@@ -12,6 +12,12 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D m_Rb;
     private bool m_IsFacingRight = true;
 
+    [SerializeField]
+    private float m_Gravity = 0.5f;
+    [SerializeField]
+    private float m_JumpSpeed = 350f;
+    public bool IsJumping = false;
+
     private void Awake() 
     {
         m_Rb = GetComponent<Rigidbody2D>();
@@ -27,12 +33,29 @@ public class PlayerMovement : MonoBehaviour
         if (movX > 0 && !m_IsFacingRight)
         {
             transform.rotation *= Quaternion.Euler(0f, -180f, 0f); 
-            m_IsFacingRight = !m_IsFacingRight;      
+            m_IsFacingRight = !m_IsFacingRight;
         }
 
         m_Rb.velocity = new Vector2(
             movX * m_SpeedX, 
-            movY * m_SpeedY
+            !IsJumping ? movY * m_SpeedY : m_Rb.velocity.y
         );
+    }
+
+    private void Update() 
+    {
+        if (IsJumping)
+        {
+            m_Rb.velocity += Vector2.down * (m_Gravity * Time.deltaTime);
+        }    
+    }
+
+    public void Jump()
+    {
+        if (!IsJumping)
+        {
+            IsJumping = true;
+            m_Rb.AddForce(Vector2.up * m_JumpSpeed);
+        }
     }
 }
