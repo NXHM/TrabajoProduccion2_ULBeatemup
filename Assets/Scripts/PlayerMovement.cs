@@ -18,9 +18,19 @@ public class PlayerMovement : MonoBehaviour
     private float m_JumpSpeed = 350f;
     public bool IsJumping = false;
 
+    [SerializeField]
+    private FloorMovement m_FloorMovement;
+
+    private Vector3 m_InitialPos;
+
     private void Awake() 
     {
         m_Rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Start() 
+    {
+        m_InitialPos = transform.position;
     }
 
     public void Move(float movX, float movY)
@@ -47,7 +57,15 @@ public class PlayerMovement : MonoBehaviour
         if (IsJumping)
         {
             m_Rb.velocity += Vector2.down * (m_Gravity * Time.deltaTime);
-        }    
+            Vector3 deltaMov = transform.position - m_InitialPos;
+            m_FloorMovement.Move(deltaMov.x, 0f);
+        }else
+        {
+            Vector3 deltaMov = transform.position - m_InitialPos;
+            if (deltaMov.y < 0.5f) deltaMov.y = 0f;
+            m_FloorMovement.Move(deltaMov.x, deltaMov.y);
+        } 
+        m_InitialPos = transform.position;
     }
 
     public void Jump()
@@ -57,5 +75,11 @@ public class PlayerMovement : MonoBehaviour
             IsJumping = true;
             m_Rb.AddForce(Vector2.up * m_JumpSpeed);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) 
+    {
+        IsJumping = false;
+        m_Rb.velocity = Vector2.zero;
     }
 }
