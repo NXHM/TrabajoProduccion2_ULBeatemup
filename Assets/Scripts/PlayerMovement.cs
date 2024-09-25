@@ -23,10 +23,12 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D m_SpriteRb;
     private Vector2 m_Velocity = Vector2.zero;
+    private AudioSource m_AudioSource;
 
     private void Awake() 
     {
         m_SpriteRb = transform.Find("Sprite").GetComponent<Rigidbody2D>();
+        m_AudioSource = GetComponent<AudioSource>();
     }
 
     private void Start() 
@@ -64,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
         {
             IsJumping = true;
             m_SpriteRb.AddForce(Vector2.up * m_JumpSpeed);
+            m_AudioSource.Play();
         }
     }
 }
