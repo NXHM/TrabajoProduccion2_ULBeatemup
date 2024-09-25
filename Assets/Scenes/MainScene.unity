@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 54021366}
   m_Layer: 0
   m_Name: Sprite
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -223,7 +223,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -341,7 +341,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SpeedX: 1
   m_SpeedY: 1
-  m_Gravity: 0.5
   m_JumpSpeed: 350
   IsJumping: 0
   m_FloorMovement: {fileID: 0}
@@ -580,6 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc7ca69e0bdccc4092e3ded1eb0a986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_PlayerMovement: {fileID: 98378011}
 --- !u!1 &1118983692
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Awake() 
     {
-        m_PlayerMovement = transform.Find("Sprite").GetComponent<PlayerMovement>();
+        m_PlayerMovement = GetComponent<PlayerMovement>();
     }
 
     private void Update() 

@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class FloorMovement : MonoBehaviour
 {
-    public void Move(float movX, float movY)
+    [SerializeField]
+    private PlayerMovement m_PlayerMovement;
+
+    private void OnCollisionEnter2D(Collision2D other) 
     {
-        transform.position += new Vector3(movX, movY, 0f);
+        if (other.collider.CompareTag("Player"))
+        {
+            m_PlayerMovement.IsJumping = false;
+        }
     }
 }

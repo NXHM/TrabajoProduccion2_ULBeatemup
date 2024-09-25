@@ -13,8 +13,6 @@ public class PlayerMovement : MonoBehaviour
     private bool m_IsFacingRight = true;
 
     [SerializeField]
-    private float m_Gravity = 0.5f;
-    [SerializeField]
     private float m_JumpSpeed = 350f;
     public bool IsJumping = false;
 
@@ -23,9 +21,12 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 m_InitialPos;
 
+    private Rigidbody2D m_SpriteRb;
+    private Vector2 m_Velocity = Vector2.zero;
+
     private void Awake() 
     {
-        m_Rb = GetComponent<Rigidbody2D>();
+        m_SpriteRb = transform.Find("Sprite").GetComponent<Rigidbody2D>();
     }
 
     private void Start() 
@@ -46,27 +47,15 @@ public class PlayerMovement : MonoBehaviour
             m_IsFacingRight = !m_IsFacingRight;
         }
 
-        m_Rb.velocity = new Vector2(
+        m_Velocity = new Vector2(
             movX * m_SpeedX, 
-            !IsJumping ? movY * m_SpeedY : m_Rb.velocity.y
+            movY * m_SpeedY
         );
     }
 
     private void Update() 
     {
-        if (IsJumping)
-        {
-            m_Rb.velocity += Vector2.down * (m_Gravity * Time.deltaTime);
-            Vector3 deltaMov = transform.position - m_InitialPos;
-            m_FloorMovement.Move(deltaMov.x, 0f);
-        }else
-        {
-            Vector3 deltaMov = transform.position - m_InitialPos;
-            Debug.Log(deltaMov.y);
-            if (deltaMov.magnitude == 0f) deltaMov.y = 0f;
-            m_FloorMovement.Move(deltaMov.x, deltaMov.y);
-        } 
-        m_InitialPos = transform.position;
+        transform.position += (Vector3)(m_Velocity * Time.deltaTime);
     }
 
     public void Jump()
@@ -74,13 +63,7 @@ public class PlayerMovement : MonoBehaviour
         if (!IsJumping)
         {
             IsJumping = true;
-            m_Rb.AddForce(Vector2.up * m_JumpSpeed);
+            m_SpriteRb.AddForce(Vector2.up * m_JumpSpeed);
         }
-    }
-
-    private void OnCollisionEnter2D(Collision2D other) 
-    {
-        IsJumping = false;
-        m_Rb.velocity = Vector2.zero;
     }
 }
