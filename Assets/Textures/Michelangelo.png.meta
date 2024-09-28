@@ -1950,15 +1950,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michelangelo_87
+      name: Michelangelo_Jump_1
       rect:
         serializedVersion: 2
-        x: 26
+        x: 27
         y: 1195
         width: 38
         height: 71
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1971,15 +1971,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michelangelo_88
+      name: Michelangelo_Jump_2
       rect:
         serializedVersion: 2
-        x: 77
+        x: 78
         y: 1209
         width: 34
         height: 73
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4247,8 +4247,6 @@ TextureImporter:
       Michelangelo_84: -180503154
       Michelangelo_85: -1353275043
       Michelangelo_86: -1896892921
-      Michelangelo_87: 1842934643
-      Michelangelo_88: 1334144210
       Michelangelo_89: 1516190550
       Michelangelo_90: -1807306153
       Michelangelo_91: -148559810
@@ -4266,6 +4264,8 @@ TextureImporter:
       Michelangelo_Idle_4: -430659115
       Michelangelo_Idle_5: -1450986063
       Michelangelo_Idle_6: 1585824427
+      Michelangelo_Jump_1: 1842934643
+      Michelangelo_Jump_2: 1334144210
       Michelangelo_Walk_1: 1807787423
       Michelangelo_Walk_2: -2075287257
       Michelangelo_Walk_3: 933424890

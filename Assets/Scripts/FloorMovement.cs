@@ -11,7 +11,7 @@ public class FloorMovement : MonoBehaviour
     {
         if (other.collider.CompareTag("Player"))
         {
-            m_PlayerMovement.IsJumping = false;
+            m_PlayerMovement.DeactivateJump();
         }
     }
 }

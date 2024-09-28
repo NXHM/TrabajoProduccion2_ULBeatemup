@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -19,6 +20,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private FloorMovement m_FloorMovement;
 
+    [SerializeField]
+    private Transform m_RaycastPoint;
+    [SerializeField]
+    private float m_RaycastDistance = 0.1f;
+
     private Vector3 m_InitialPos;
 
     private Rigidbody2D m_SpriteRb;
@@ -27,14 +33,14 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator m_SpriteAnimator;
 
-    private void Awake() 
+    private void Awake()
     {
         m_SpriteRb = transform.Find("Sprite").GetComponent<Rigidbody2D>();
         m_SpriteAnimator = transform.Find("Sprite").GetComponent<Animator>();
         m_AudioSource = GetComponent<AudioSource>();
     }
 
-    private void Start() 
+    private void Start()
     {
         m_InitialPos = transform.position;
     }
@@ -48,12 +54,12 @@ public class PlayerMovement : MonoBehaviour
         }
         if (movX > 0 && !m_IsFacingRight)
         {
-            transform.rotation *= Quaternion.Euler(0f, -180f, 0f); 
+            transform.rotation *= Quaternion.Euler(0f, -180f, 0f);
             m_IsFacingRight = !m_IsFacingRight;
         }
 
         m_Velocity = new Vector2(
-            movX * m_SpeedX, 
+            movX * m_SpeedX,
             movY * m_SpeedY
         );
 
@@ -61,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
         {
             m_SpriteAnimator.SetFloat("MovX", Mathf.Abs(movX));
             m_SpriteAnimator.SetBool("Stop", false);
-        }else if (Mathf.Abs(movY) > 0f)
+        } else if (Mathf.Abs(movY) > 0f)
         {
             m_SpriteAnimator.SetFloat("MovX", Mathf.Abs(movY));
             m_SpriteAnimator.SetBool("Stop", false);
@@ -74,18 +80,70 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    private void Update() 
+    private void Update()
     {
         transform.position += (Vector3)(m_Velocity * Time.deltaTime);
+    }
+
+    private void FixedUpdate()
+    {
+        if (IsJumping && m_SpriteRb.velocity.y < 0f)
+        {
+            m_SpriteAnimator.SetFloat("VelY", m_SpriteRb.velocity.y);
+
+            if (IsGrounded())
+            {
+                Debug.Log("DeactivateJump");
+                DeactivateJump();
+            }
+        }
+
+    }
+
+    public bool IsGrounded()
+    {
+        var hit = Physics2D.Raycast(
+            m_RaycastPoint.position,
+            Vector2.down,
+            m_RaycastDistance,
+            LayerMask.GetMask("Floor"));
+
+        if (hit.collider != null)
+        {
+            return true;
+        }
+        return false;
     }
 
     public void Jump()
     {
         if (!IsJumping)
         {
-            IsJumping = true;
-            m_SpriteRb.AddForce(Vector2.up * m_JumpSpeed);
-            m_AudioSource.Play();
+            ActivateJump();
         }
+    }
+
+    public void ActivateJump()
+    {
+        Debug.Log("ActivateJump");
+        IsJumping = true;
+        m_SpriteAnimator.SetFloat("VelY", 0f);
+        m_SpriteRb.AddForce(Vector2.up * m_JumpSpeed);
+        m_SpriteAnimator.SetBool("Jump", true);
+        m_AudioSource.Play();
+    }
+
+    public void DeactivateJump()
+    {
+        IsJumping = false;
+        m_SpriteAnimator.SetBool("Jump", false);
+        m_SpriteAnimator.SetFloat("VelY", 0f);
+    }
+
+    public void OnDrawGizmos()
+    {
+        Gizmos.DrawRay(
+            m_RaycastPoint.position,
+            Vector3.down * m_RaycastDistance);
     }
 }
