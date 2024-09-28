@@ -25,9 +25,12 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 m_Velocity = Vector2.zero;
     private AudioSource m_AudioSource;
 
+    private Animator m_SpriteAnimator;
+
     private void Awake() 
     {
         m_SpriteRb = transform.Find("Sprite").GetComponent<Rigidbody2D>();
+        m_SpriteAnimator = transform.Find("Sprite").GetComponent<Animator>();
         m_AudioSource = GetComponent<AudioSource>();
     }
 
@@ -53,6 +56,22 @@ public class PlayerMovement : MonoBehaviour
             movX * m_SpeedX, 
             movY * m_SpeedY
         );
+
+        if (Mathf.Abs(movX) > 0f)
+        {
+            m_SpriteAnimator.SetFloat("MovX", Mathf.Abs(movX));
+            m_SpriteAnimator.SetBool("Stop", false);
+        }else if (Mathf.Abs(movY) > 0f)
+        {
+            m_SpriteAnimator.SetFloat("MovX", Mathf.Abs(movY));
+            m_SpriteAnimator.SetBool("Stop", false);
+        }
+        else
+        {
+            m_SpriteAnimator.SetBool("Stop", true);
+            m_SpriteAnimator.SetFloat("MovX", 0f);
+        }
+
     }
 
     private void Update() 
