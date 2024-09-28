@@ -131,6 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 54021362}
+  - component: {fileID: 54021368}
   - component: {fileID: 54021363}
   - component: {fileID: 54021364}
   - component: {fileID: 54021366}
@@ -303,6 +304,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &54021368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54021361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daab3406595a3a14895d4e25c5656f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlayerMovement: {fileID: 98378011}
 --- !u!1 &98378006
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,7 +802,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610225074}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1

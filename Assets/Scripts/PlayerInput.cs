@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,14 +21,21 @@ public class PlayerInput : MonoBehaviour
         m_BeatemupControls.Player.Jump.performed += DoJump;
         m_BeatemupControls.Player.Jump.Enable();
 
+        m_BeatemupControls.Player.Attack1.performed += DoAttack1;
+        m_BeatemupControls.Player.Attack1.Enable();
+
         m_MoveInputAction = m_BeatemupControls.Player.Move;
         m_MoveInputAction.Enable();
     }
+
 
     private void OnDisable()
     {
         m_BeatemupControls.Player.Jump.performed -= DoJump;
         m_BeatemupControls.Player.Jump.Disable();
+
+        m_BeatemupControls.Player.Attack1.performed -= DoAttack1;
+        m_BeatemupControls.Player.Attack1.Disable();
 
         m_MoveInputAction.Disable();
     }
@@ -43,5 +51,9 @@ public class PlayerInput : MonoBehaviour
     private void DoJump(InputAction.CallbackContext context)
     {
         m_PlayerMovement.Jump();
+    }
+    private void DoAttack1(InputAction.CallbackContext context)
+    {
+        m_PlayerMovement.Attack1();
     }
 }

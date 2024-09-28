@@ -119,6 +119,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -879,15 +892,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michelangelo_36
+      name: Michelangelo_Melee1_1
       rect:
         serializedVersion: 2
         x: 6
         y: 1841
         width: 58
-        height: 86
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -900,15 +913,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michelangelo_37
+      name: Michelangelo_Melee1_2
       rect:
         serializedVersion: 2
         x: 78
         y: 1841
         width: 59
         height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -921,15 +934,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michelangelo_38
+      name: Michelangelo_Melee1_3
       rect:
         serializedVersion: 2
-        x: 146
+        x: 157
         y: 1840
-        width: 78
+        width: 67
         height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -942,15 +955,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michelangelo_39
+      name: Michelangelo_Melee1_4
       rect:
         serializedVersion: 2
         x: 235
         y: 1841
         width: 58
         height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -963,15 +976,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michelangelo_40
+      name: Michelangelo_Melee1_5
       rect:
         serializedVersion: 2
         x: 308
         y: 1841
         width: 56
         height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4194,12 +4207,7 @@ TextureImporter:
       Michelangelo_33: 547300370
       Michelangelo_34: 1403094200
       Michelangelo_35: -777950085
-      Michelangelo_36: 590126909
-      Michelangelo_37: 1869134865
-      Michelangelo_38: -818307747
-      Michelangelo_39: 1825467688
       Michelangelo_4: -615546446
-      Michelangelo_40: -1079121095
       Michelangelo_41: 1206361132
       Michelangelo_42: 220373602
       Michelangelo_43: 599465427
@@ -4266,6 +4274,11 @@ TextureImporter:
       Michelangelo_Idle_6: 1585824427
       Michelangelo_Jump_1: 1842934643
       Michelangelo_Jump_2: 1334144210
+      Michelangelo_Melee1_1: 590126909
+      Michelangelo_Melee1_2: 1869134865
+      Michelangelo_Melee1_3: -818307747
+      Michelangelo_Melee1_4: 1825467688
+      Michelangelo_Melee1_5: -1079121095
       Michelangelo_Walk_1: 1807787423
       Michelangelo_Walk_2: -2075287257
       Michelangelo_Walk_3: 933424890

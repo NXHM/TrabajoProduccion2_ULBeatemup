@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float m_JumpSpeed = 350f;
     public bool IsJumping = false;
+    private bool m_CanAttack = true;
 
     [SerializeField]
     private FloorMovement m_FloorMovement;
@@ -100,26 +101,19 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    public bool IsGrounded()
-    {
-        var hit = Physics2D.Raycast(
-            m_RaycastPoint.position,
-            Vector2.down,
-            m_RaycastDistance,
-            LayerMask.GetMask("Floor"));
-
-        if (hit.collider != null)
-        {
-            return true;
-        }
-        return false;
-    }
-
     public void Jump()
     {
         if (!IsJumping)
         {
             ActivateJump();
+        }
+    }
+
+    public void Attack1()
+    {
+        if (m_CanAttack && !IsJumping)
+        {
+            ActivateAttack1();
         }
     }
 
@@ -138,6 +132,33 @@ public class PlayerMovement : MonoBehaviour
         IsJumping = false;
         m_SpriteAnimator.SetBool("Jump", false);
         m_SpriteAnimator.SetFloat("VelY", 0f);
+    }
+
+    public void ActivateAttack1()
+    {
+        m_AudioSource.Play();
+        m_SpriteAnimator.SetTrigger("Attack1");
+        m_CanAttack = false;
+    }
+
+    public void DeactivateAttack1()
+    {
+        m_CanAttack = true;
+    }
+
+    public bool IsGrounded()
+    {
+        var hit = Physics2D.Raycast(
+            m_RaycastPoint.position,
+            Vector2.down,
+            m_RaycastDistance,
+            LayerMask.GetMask("Floor"));
+
+        if (hit.collider != null)
+        {
+            return true;
+        }
+        return false;
     }
 
     public void OnDrawGizmos()
