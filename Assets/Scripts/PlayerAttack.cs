@@ -7,7 +7,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField]
     private PlayerMovement m_PlayerMovement;
 
-    public void AttackEnd(int num)
+    public void AttackEnd()
     {
         Debug.Log("AnimationEvent");
         m_PlayerMovement.DeactivateAttack1();
