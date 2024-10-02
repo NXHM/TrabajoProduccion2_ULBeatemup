@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [ExecuteInEditMode]
@@ -33,11 +34,12 @@ public class PlayerAttack : MonoBehaviour
         {
             // hubo colision
             Debug.Log("Hubo colision");
+            collider.gameObject.GetComponent<EnemyHitbox>().Hit();
         }
     }
 
-    private void OnDrawGizmos() {
+    /*private void OnDrawGizmos() {
         Gizmos.color = Color.green;
         Gizmos.DrawSphere(m_AttackQueryPoint.position, m_AttackRange);
-    }
+    }*/
 }

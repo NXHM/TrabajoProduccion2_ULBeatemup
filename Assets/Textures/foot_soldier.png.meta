@@ -1,0 +1,1962 @@
+fileFormatVersion: 2
+guid: 7701c4c458d0d73479b7ead924caa630
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: foot_soldier_0
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 544
+        width: 36
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7630e7c17d66254dbf241253836306e
+      internalID: 1956052146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 544
+        width: 36
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69ac030fe2925f4db806b5e068d77c5
+      internalID: -216236777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 544
+        width: 30
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f48c001b451e514092426dba8f51386
+      internalID: 1467395293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_3
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 544
+        width: 15
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f03ae445b7e7c040aa40c5c6217cb79
+      internalID: -1731205871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_4
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 544
+        width: 28
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680c4c9954f0e7941b39a8b1603c6666
+      internalID: -1684039904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_5
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 544
+        width: 32
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc39a96d0c72d254aa0d5d89b27d231e
+      internalID: -878486146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_6
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 544
+        width: 48
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68200a9afc5e1ee46801cb2624e1b15e
+      internalID: 1559340109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_7
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 544
+        width: 26
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440f9e746d51bd34e9da1d337eda729a
+      internalID: 1335221683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_8
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 544
+        width: 20
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88eafcdc028dfb348a001ba0f0a0d66f
+      internalID: 167476879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_9
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 544
+        width: 30
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f83a2cbeb92a8f43897c0713eba2343
+      internalID: 1905361769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_10
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 544
+        width: 49
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc6ad6f0d9157e40add4d87f8022b8b
+      internalID: 101793555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_11
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 544
+        width: 25
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab88c75b3daea214d8e4c7197b7b49a9
+      internalID: -1421640425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_12
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 544
+        width: 40
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ca2f462e6d2c944ac9cd40408b5a54
+      internalID: 1977263253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_13
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 544
+        width: 52
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4332249af13492f4aa2c1ca2f9347b41
+      internalID: -1670857394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_14
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 544
+        width: 36
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de485d9cdec099143adf2d9b19a49b46
+      internalID: 1660160090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_15
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 544
+        width: 32
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b6eb620d014804081d9f500dc6f112
+      internalID: -416290356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_16
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 544
+        width: 24
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ec52f57e70d20438451d22cbb1067a
+      internalID: -506640261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_17
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 544
+        width: 16
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ccb525e4b44814fadace6e41760089
+      internalID: 1134528606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_18
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 544
+        width: 26
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378f4eb9067eb4d45ba480cb1854bc41
+      internalID: -1130952601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fs_idle_1
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 455
+        width: 36
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd431348594160d4fa235ae33c8b11ed
+      internalID: 1715442484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fs_idle_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 456
+        width: 36
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba4199b260f5cf4385f164c33f04190
+      internalID: -26569885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fs_walk_1
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 456
+        width: 32
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3dd8750681d2c4b8dff79e5ff32e28
+      internalID: -2041122088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fs_walk_2
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 456
+        width: 24
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56710d0277bf7594f8e19b3433aed2ea
+      internalID: -1265641298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fs_walk_3
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 456
+        width: 32
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f16138e83846204ba8b5d2da7441889
+      internalID: 1548998296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_24
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 456
+        width: 35
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b469b3b40ca51541810e6ecaea4d52e
+      internalID: 1225105611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_25
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 456
+        width: 52
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7352d3fe5e3a9204f904028d2203f434
+      internalID: 634881815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_punch_2
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 456
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c039d2d4d558041a17dec07639d9e7
+      internalID: -116180312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_27
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 456
+        width: 32
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a403ca6ab2679a0468fad1dac523379b
+      internalID: -1009216661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_punch_1
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 456
+        width: 32
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469e92656aeefff4c910170d565aa563
+      internalID: -2105482501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_29
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 456
+        width: 41
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f55edd0730955a468a2adeae3b731c6
+      internalID: 908810812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_30
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 456
+        width: 42
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531fb0f20fa622c459e5efece23eea8e
+      internalID: 1707039702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_31
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 471
+        width: 44
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8ebfd6b5c1d31499f7730adf6970ae
+      internalID: -1145780338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_32
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 456
+        width: 19
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33bb317da2f243845b734c789782e6b6
+      internalID: 436746309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_33
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 424
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186ec482cd5c23742b362e8993787ed0
+      internalID: 1476845658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_34
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 376
+        width: 32
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19be1619cefd3de4a9d26905fa0d3062
+      internalID: 1366756628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_35
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 386
+        width: 48
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3160003fe6804144a194f091d762bdb
+      internalID: 900506252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_36
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 376
+        width: 40
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e3bbf537dc2da4c8e1e7e9acde6df7
+      internalID: -914333993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_37
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 376
+        width: 40
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8558aa2423d4de47a05b9e5bffd5c65
+      internalID: 847825687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_38
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 376
+        width: 36
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52048f52ba8ef846a9faf6c74df9586
+      internalID: -234138652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_39
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 376
+        width: 36
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2be493d9e56cde4e951069682293cf9
+      internalID: -248220348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_40
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 376
+        width: 43
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104e88ac166d8a0459db2d3c10391704
+      internalID: -1502845740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_41
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 376
+        width: 54
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51484a3169c6e8428d83f4188883e50
+      internalID: 899885024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_42
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 408
+        width: 8
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b500525d150e95445baa1a78665334b9
+      internalID: 1755325313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_43
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 408
+        width: 8
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f0837740575904cb01d78616fb5411
+      internalID: 1357961813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_44
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 376
+        width: 23
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d81ba215626fc4286d1aafb2aae321
+      internalID: 47245926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_45
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 376
+        width: 25
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3571edd091051684a87585d09eb52b4a
+      internalID: 473740869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_46
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 376
+        width: 32
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3fa7cc05a891c46803e07f55f3522f
+      internalID: 885752955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_47
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 396
+        width: 16
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c25a7df3635e749b50ae7cd5d18be8
+      internalID: 1326533504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_48
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 376
+        width: 31
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05892b63f2fbce341ba9845fd9981de5
+      internalID: 817949831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_49
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 376
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2430059c14d724740ae68f8e1a69667f
+      internalID: 1771706706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_50
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 376
+        width: 6
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14c77e04cad284409c846d685583925
+      internalID: 992773658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_51
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 376
+        width: 26
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8becd00f50883d44866439c6f948334
+      internalID: 1718116715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_52
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 376
+        width: 38
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a723512e9cb68d4e96e20bbc0ad4067
+      internalID: 1767144782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_53
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 304
+        width: 32
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf5143700b6bef498a74c6a0a906761
+      internalID: -917178740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_54
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 304
+        width: 37
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6a2843e00dd1748ae62478b185ceb4
+      internalID: -678698093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_55
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 304
+        width: 38
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7c46d712a2a7b459d6d0c34a655ca6
+      internalID: -897442099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_56
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 326
+        width: 11
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49fb8c07bb76be24b876e5645633fab1
+      internalID: 210460349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_57
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 326
+        width: 11
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d150d6955514794aa3676b186240f93
+      internalID: -1267630225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_58
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 304
+        width: 35
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db84ff62da6a3b42887fa03fdb4ecac
+      internalID: -804141614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_59
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 304
+        width: 35
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8a87b789fcb474ba521ac89e525906
+      internalID: 1942259128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_60
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 304
+        width: 32
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71839f27bbd4d3499579ad9178af080
+      internalID: -1237027041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_61
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 304
+        width: 15
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429aacd8d42e7a443997da16ac709636
+      internalID: 216316436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_62
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 304
+        width: 28
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89af893c7258d0143bcbc51cd1d38152
+      internalID: 349021885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_63
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 304
+        width: 41
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419382ef0fb2bfd428d4287f4c1f87f5
+      internalID: 839992682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_64
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 304
+        width: 52
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00dc6fe5ee5578e47a64abf68f807d38
+      internalID: 435296645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_65
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 304
+        width: 37
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9a822883dea4a43b4897341ba3f3ce
+      internalID: 1048999589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_66
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 304
+        width: 38
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558f055cf5209e2458d5c94cc21a9e58
+      internalID: 497500347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_67
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 304
+        width: 35
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c9f0375d6f5f8459f1cd681bdb8ee7
+      internalID: -1364223269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_68
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 304
+        width: 35
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a285e035a5fe14c42a4d9cc9a4617d57
+      internalID: 2113563192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_69
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 304
+        width: 32
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5fee9774d6016478350cb8d4072bd0
+      internalID: -141002627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_70
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 304
+        width: 24
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb2bd09367b5004683caa3f0430b4e4
+      internalID: -36908309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_71
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 304
+        width: 33
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9746ac675665acc4db4a6d163696344d
+      internalID: -1040291142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_72
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 304
+        width: 41
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8cce362fd9048444a7967c15eadbb96
+      internalID: 166127704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_73
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 304
+        width: 54
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacf010453d62e148a00822abfb70073
+      internalID: 797439554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_74
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 142
+        width: 42
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e75de17e460fac4187eb4af7489b94c
+      internalID: 1879447415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_75
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 156
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604daff4e4a23bd448410e35786fa6ac
+      internalID: -1335731917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_76
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 144
+        width: 52
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5ab15013fbd4a46a17fc4c59a9147e
+      internalID: 1720172928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_77
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 113
+        width: 110
+        height: 118
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f38ddd3baa9dfa47b7ab0195c80b98f
+      internalID: 638114529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_78
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 50
+        width: 220
+        height: 244
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5768e4fb35da17a41aab338980bd546b
+      internalID: -349027625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_79
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 140
+        width: 42
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09178f1aeaece64cbadb6068f5aa2e1
+      internalID: 878892700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_80
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 153
+        width: 44
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebac1840d2388004bbeb5d972c71a520
+      internalID: -1044643994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_81
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 157
+        width: 52
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482dccb6402c6af4e86173bcc6c2bb7e
+      internalID: 1481593098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_82
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 117
+        width: 108
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b967f78f90ddb3a419fa440809210238
+      internalID: -1095218541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foot_soldier_83
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 62
+        width: 216
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d22a0d7642ffc49a9cf094abb400d3
+      internalID: 859892250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      foot_punch_1: -2105482501
+      foot_punch_2: -116180312
+      foot_soldier_0: 1956052146
+      foot_soldier_1: -216236777
+      foot_soldier_10: 101793555
+      foot_soldier_11: -1421640425
+      foot_soldier_12: 1977263253
+      foot_soldier_13: -1670857394
+      foot_soldier_14: 1660160090
+      foot_soldier_15: -416290356
+      foot_soldier_16: -506640261
+      foot_soldier_17: 1134528606
+      foot_soldier_18: -1130952601
+      foot_soldier_2: 1467395293
+      foot_soldier_24: 1225105611
+      foot_soldier_25: 634881815
+      foot_soldier_27: -1009216661
+      foot_soldier_29: 908810812
+      foot_soldier_3: -1731205871
+      foot_soldier_30: 1707039702
+      foot_soldier_31: -1145780338
+      foot_soldier_32: 436746309
+      foot_soldier_33: 1476845658
+      foot_soldier_34: 1366756628
+      foot_soldier_35: 900506252
+      foot_soldier_36: -914333993
+      foot_soldier_37: 847825687
+      foot_soldier_38: -234138652
+      foot_soldier_39: -248220348
+      foot_soldier_4: -1684039904
+      foot_soldier_40: -1502845740
+      foot_soldier_41: 899885024
+      foot_soldier_42: 1755325313
+      foot_soldier_43: 1357961813
+      foot_soldier_44: 47245926
+      foot_soldier_45: 473740869
+      foot_soldier_46: 885752955
+      foot_soldier_47: 1326533504
+      foot_soldier_48: 817949831
+      foot_soldier_49: 1771706706
+      foot_soldier_5: -878486146
+      foot_soldier_50: 992773658
+      foot_soldier_51: 1718116715
+      foot_soldier_52: 1767144782
+      foot_soldier_53: -917178740
+      foot_soldier_54: -678698093
+      foot_soldier_55: -897442099
+      foot_soldier_56: 210460349
+      foot_soldier_57: -1267630225
+      foot_soldier_58: -804141614
+      foot_soldier_59: 1942259128
+      foot_soldier_6: 1559340109
+      foot_soldier_60: -1237027041
+      foot_soldier_61: 216316436
+      foot_soldier_62: 349021885
+      foot_soldier_63: 839992682
+      foot_soldier_64: 435296645
+      foot_soldier_65: 1048999589
+      foot_soldier_66: 497500347
+      foot_soldier_67: -1364223269
+      foot_soldier_68: 2113563192
+      foot_soldier_69: -141002627
+      foot_soldier_7: 1335221683
+      foot_soldier_70: -36908309
+      foot_soldier_71: -1040291142
+      foot_soldier_72: 166127704
+      foot_soldier_73: 797439554
+      foot_soldier_74: 1879447415
+      foot_soldier_75: -1335731917
+      foot_soldier_76: 1720172928
+      foot_soldier_77: 638114529
+      foot_soldier_78: -349027625
+      foot_soldier_79: 878892700
+      foot_soldier_8: 167476879
+      foot_soldier_80: -1044643994
+      foot_soldier_81: 1481593098
+      foot_soldier_82: -1095218541
+      foot_soldier_83: 859892250
+      foot_soldier_9: 1905361769
+      fs_idle_1: 1715442484
+      fs_idle_2: -26569885
+      fs_walk_1: -2041122088
+      fs_walk_2: -1265641298
+      fs_walk_3: 1548998296
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
