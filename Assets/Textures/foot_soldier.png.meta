@@ -93,6 +93,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -874,7 +913,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: foot_soldier_37
+      name: foot_soldier_talk_1
       rect:
         serializedVersion: 2
         x: 489
@@ -1897,7 +1936,6 @@ TextureImporter:
       foot_soldier_34: 1366756628
       foot_soldier_35: 900506252
       foot_soldier_36: -914333993
-      foot_soldier_37: 847825687
       foot_soldier_38: -234138652
       foot_soldier_39: -248220348
       foot_soldier_4: -1684039904
@@ -1950,6 +1988,7 @@ TextureImporter:
       foot_soldier_82: -1095218541
       foot_soldier_83: 859892250
       foot_soldier_9: 1905361769
+      foot_soldier_talk_1: 847825687
       fs_idle_1: 1715442484
       fs_idle_2: -26569885
       fs_walk_1: -2041122088
