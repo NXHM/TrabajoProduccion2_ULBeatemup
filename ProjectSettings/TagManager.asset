@@ -50,3 +50,6 @@ TagManager:
   - name: Characters
     uniqueID: 2615848149
     locked: 0
+  - name: Shuriken
+    uniqueID: 365553389
+    locked: 0

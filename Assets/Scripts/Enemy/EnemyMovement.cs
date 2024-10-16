@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,71 +17,106 @@ public class EnemyMovement : MonoBehaviour
     private float m_Speed = 4f;
     [SerializeField]
     private Transform m_RaycastGenerator;
-    private EnemyState m_State = EnemyState.Idle;
-    private Animator m_SpriteAnimator;
-    private bool m_IsTalking = false;
+    [SerializeField]
+    private GameObject shurikenPrefab;
 
+    private float minAttackCooldown = 2f; // Tiempo mínimo entre lanzamientos
+    private float maxAttackCooldown = 5f; // Tiempo máximo entre lanzamientos
+    private float cooldownTimer;
+
+    private EnemyState m_State = EnemyState.Idle;
     private Transform m_Player = null;
 
-    private void Awake() 
+    private void Awake()
     {
-        m_SpriteAnimator = transform.Find("Sprite").GetComponent<Animator>();
-        //m_RaycastGenerator = transform.Find("RaycastGenerator");
+        SetRandomCooldown(); // Establecer un cooldown inicial aleatorio
     }
 
-    private void Update() 
+    private void Update()
     {
         float distance = GetPlayerDistance();
         if (distance > 0f)
         {
             AttackorChase(distance);
-        }else{
+        }
+        else
+        {
             m_State = EnemyState.Idle;
         }
 
-        switch(m_State)
+        switch (m_State)
         {
             case EnemyState.Idle:
                 OnIdle();
-            break;
+                break;
             case EnemyState.Chasing:
                 OnChase();
-            break;
+                break;
             case EnemyState.Attacking:
-                OnAttack();
-            break;
+                // Aquí no se hace nada, ya que solo lanzaremos el shuriken
+                break;
+        }
+
+        // Manejar el temporizador para lanzar el Shuriken
+        if (cooldownTimer > 0)
+        {
+            cooldownTimer -= Time.deltaTime;
+        }
+
+        // Lanzar el Shuriken cuando el temporizador llegue a cero
+        if (cooldownTimer <= 0)
+        {
+            LaunchShuriken(); // Lanzar el Shuriken
+            SetRandomCooldown(); // Establecer un nuevo cooldown aleatorio
         }
     }
 
-    private void OnIdle()
-    {}
+    private void LaunchShuriken()
+    {
+        if (shurikenPrefab == null)
+        {
+            Debug.LogError("Shuriken prefab is not assigned!");
+            return;
+        }
+
+        if (m_Player == null) return; // Asegúrate de que hay un jugador al que apuntar
+
+        Vector3 spawnPosition = transform.position; // Salir del cuerpo del enemigo
+        GameObject shuriken = Instantiate(shurikenPrefab, spawnPosition, Quaternion.identity);
+
+        if (shuriken != null)
+        {
+            Vector2 direction = (m_Player.position - transform.position).normalized; // Apuntar hacia el jugador
+            shuriken.GetComponent<Shuriken>().Initialize(spawnPosition, direction);
+            Debug.Log($"Launching Shuriken from {spawnPosition} towards {m_Player.position}");
+        }
+    }
+
+    private void SetRandomCooldown()
+    {
+        cooldownTimer = UnityEngine.Random.Range(minAttackCooldown, maxAttackCooldown);
+    }
+
+    private void OnIdle() { }
 
     private void OnChase()
     {
-        if (m_Player == null)
-        {
-            return;
-        }
+        if (m_Player == null) return;
 
         Vector3 dir = (m_Player.position - transform.position).normalized;
         transform.position += m_Speed * Time.deltaTime * dir;
     }
-
-    private void OnAttack()
-    {}
-
-    
 
     private void AttackorChase(float distance)
     {
         if (distance < m_AttackDistance)
         {
             m_State = EnemyState.Attacking;
-        }else
+        }
+        else
         {
             m_State = EnemyState.Chasing;
         }
-        
     }
 
     private float GetPlayerDistance()
@@ -94,12 +128,11 @@ public class EnemyMovement : MonoBehaviour
             m_RaycastDistance,
             LayerMask.GetMask("Hitbox")
         );
+
         if (hit.collider != null)
         {
-            // Hay una colision con player
             m_Player = hit.collider.transform;
-            Vector3 playerPos = m_Player.position;
-            return Vector3.Distance(playerPos, transform.position);
+            return Vector3.Distance(m_Player.position, transform.position);
         }
 
         hit = Physics2D.Raycast(
@@ -108,41 +141,21 @@ public class EnemyMovement : MonoBehaviour
             m_RaycastDistance,
             LayerMask.GetMask("Hitbox")
         );
+
         if (hit.collider != null)
         {
-            // Hay una colision con enemigo
             m_Player = hit.collider.transform;
-            Vector3 playerPos = m_Player.position;
-            return Vector3.Distance(playerPos, transform.position);
+            return Vector3.Distance(m_Player.position, transform.position);
         }
 
         m_Player = null;
         return -1;
     }
 
-    public void Talk()
-    {
-        if (!m_IsTalking)
-        {
-            m_SpriteAnimator.SetTrigger("Talk");
-            m_IsTalking = true;
-        }else
-        {
-            m_SpriteAnimator.SetTrigger("StopTalk");
-            m_IsTalking = false;
-        }
-    }
-
-    private void OnDrawGizmos() 
+    private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawRay(
-            m_RaycastGenerator.position,
-            Vector2.left * m_RaycastDistance
-        );
-        Gizmos.DrawRay(
-            m_RaycastGenerator.position,
-            Vector2.right * m_RaycastDistance
-        );
+        Gizmos.DrawRay(m_RaycastGenerator.position, Vector2.left * m_RaycastDistance);
+        Gizmos.DrawRay(m_RaycastGenerator.position, Vector2.right * m_RaycastDistance);
     }
 }
