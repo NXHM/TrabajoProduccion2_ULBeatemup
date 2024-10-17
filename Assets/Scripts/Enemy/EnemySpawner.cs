@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,9 @@ public class EnemySpawner : MonoBehaviour
     public float minDistanceBetweenEnemies = 1.5f;
 
     private List<Vector2> spawnedPositions = new List<Vector2>();
+
+    // Instancia estática de Random para evitar patrones repetitivos
+    private static readonly System.Random random = new System.Random();
 
     void Start()
     {
@@ -65,33 +69,46 @@ public class EnemySpawner : MonoBehaviour
         return Vector2.zero;
     }
 
-    Vector2 GetRandomPointInPolygon(float margin = 15f)
+    Vector2 GetRandomPointInPolygon(float marginX = 15f, float marginY=1.2f)
     {
-        int pathIndex = Random.Range(0, bounds.pathCount);
-        Vector2[] pathPoints = bounds.GetPath(pathIndex);
+        int pathIndex = random.Next(bounds.pathCount); // Seleccionar una ruta aleatoria
+        Vector2[] pathPoints = bounds.GetPath(pathIndex); // Obtener los puntos de la ruta seleccionada
 
-        // Determinamos los límites mínimos y máximos del área del polígono
-        float minX = Mathf.Min(pathPoints[0].x, pathPoints[1].x, pathPoints[2].x) + margin;
-        float maxX = Mathf.Max(pathPoints[0].x, pathPoints[1].x, pathPoints[2].x) - margin;
-        float minY = 0.4f;
-        float maxY = Mathf.Max(pathPoints[0].y, pathPoints[1].y, pathPoints[2].y) - margin;
+        // Determinar los límites de X aplicando el margen
+        float minX = Mathf.Min(Array.ConvertAll(pathPoints, p => p.x)) + marginX;
+        float maxX = Mathf.Max(Array.ConvertAll(pathPoints, p => p.x)) - marginX;
 
-        // Generamos un punto aleatorio dentro de estos nuevos límites
-        float randomX = Random.Range(minX, maxX);
-        float randomY = Random.Range(minY, maxY);
+        // Ajustar los límites de Y con margen
+        float minY = Mathf.Min(Array.ConvertAll(pathPoints, p => p.y)) + marginY;
+        float maxY = -1.25f;
 
-        return new Vector2(randomX, randomY);
+        // Generar un punto aleatorio dentro del rango ajustado
+        float randomX = Lerp(minX, maxX, (float)random.NextDouble());
+        float randomY = Lerp(minY, maxY, (float)random.NextDouble());
+
+        Vector2 randomPoint = new Vector2(randomX, randomY);
+
+        // Verificar si el punto está dentro del polígono
+        if (bounds.OverlapPoint(randomPoint))
+        {
+            return randomPoint;
+        }
+
+        // Si no es válido, retornar Vector2.zero
+        return Vector2.zero;
     }
 
 
     bool IsPositionValid(Vector2 position)
     {
+        // Comprobar la distancia con otras posiciones generadas
         foreach (Vector2 spawnedPosition in spawnedPositions)
         {
             if (Vector2.Distance(spawnedPosition, position) < minDistanceBetweenEnemies)
                 return false;
         }
 
+        // Comprobar si la posición está dentro del polígono
         return bounds.OverlapPoint(position);
     }
 
@@ -99,5 +116,11 @@ public class EnemySpawner : MonoBehaviour
     {
         enemiesDead++;
         Debug.Log($"[EnemySpawner] Enemigo eliminado. Total muertos: {enemiesDead}");
+    }
+
+    // Función de interpolación lineal
+    private float Lerp(float min, float max, float t)
+    {
+        return min + (max - min) * t;
     }
 }
