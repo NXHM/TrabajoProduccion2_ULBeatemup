@@ -158,7 +158,7 @@ Transform:
   m_GameObject: {fileID: 150958859}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 45.904667, y: -1.1919999, z: -10}
+  m_LocalPosition: {x: 45.864826, y: -1.1919999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1493,6 +1493,56 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28, y: 5}
   m_EdgeRadius: 0
+--- !u!1 &1408334283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1408334285}
+  - component: {fileID: 1408334284}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1408334284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408334283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6535be45470f0ae48a2ec3f188d97382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 1600986449}
+  spawnInterval: 3
+  initialSpawnDelay: 10
+  maxEnemies: 5
+  bounds: {fileID: 522088963}
+  minDistanceBetweenEnemies: 1.5
+--- !u!4 &1408334285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408334283}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1435981467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,9 +1932,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RaycastDistance: 10
-  m_AttackDistance: 0.5
+  m_AttackRangeDistance: 1.5
+  m_AttackMeleeDistance: 0.5
   m_Speed: 4
   m_RaycastGenerator: {fileID: 939058830}
+  m_objectCollider: {fileID: 0}
 --- !u!1 &1633420225
 GameObject:
   m_ObjectHideFlags: 3
@@ -2545,3 +2597,4 @@ SceneRoots:
   - {fileID: 1975026303}
   - {fileID: 1978227117}
   - {fileID: 3814189343035349743}
+  - {fileID: 1408334285}

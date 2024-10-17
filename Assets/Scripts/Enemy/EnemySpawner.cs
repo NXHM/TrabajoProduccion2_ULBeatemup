@@ -4,77 +4,100 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField]
-    public GameObject enemyPrefab;
+    [SerializeField] public GameObject enemyPrefab;
+    public float spawnInterval = 3f;
+    public float initialSpawnDelay = 10f;
+    private bool isSpawnerActive = true;
 
-    public float spawnInterval = 3f; // Intervalo de tiempo entre spawns
-    private bool isSpawnerActive = true; // Indica si el spawner está activo
-    private int enemiesSpawned = 0; 
-    private int enemiesDead = 0; 
-    public int maxEnemies = 5; 
+    private int enemiesSpawned = 0;
+    private int enemiesDead = 0;
+    public int maxEnemies = 5;
 
-    [SerializeField]
-    private PolygonCollider2D bounds; // Área donde pueden aparecer los enemigos
+    [SerializeField] private PolygonCollider2D bounds;
+    public float minDistanceBetweenEnemies = 1.5f;
 
-    // Start is called before the first frame update
+    private List<Vector2> spawnedPositions = new List<Vector2>();
+
     void Start()
     {
+        Debug.Log($"[EnemySpawner] Iniciado con delay de {initialSpawnDelay} segundos.");
         StartCoroutine(SpawnEnemies());
     }
 
-    // Corrutina para generar enemigos a intervalos de tiempo
     IEnumerator SpawnEnemies()
     {
+        yield return new WaitForSeconds(initialSpawnDelay);
+
         while (isSpawnerActive)
         {
-            // Si no hemos llegado al máximo de enemigos activos
             if (enemiesSpawned - enemiesDead < maxEnemies)
             {
-                SpawnEnemy();
-                enemiesSpawned++;
+                Vector2 spawnPosition = GetValidSpawnPosition();
+                if (spawnPosition != Vector2.zero)
+                {
+                    Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+                    spawnedPositions.Add(spawnPosition);
+                    enemiesSpawned++;
+                    Debug.Log($"[EnemySpawner] Enemigo generado en: {spawnPosition}");
+                }
+                else
+                {
+                    Debug.LogWarning("[EnemySpawner] No se encontró una posición válida.");
+                }
             }
 
-            // Esperar el intervalo antes de generar otro enemigo
             yield return new WaitForSeconds(spawnInterval);
         }
     }
 
-    // Genera el enemigo
-    void SpawnEnemy()
+    Vector2 GetValidSpawnPosition()
     {
-        // Generar una posición aleatoria dentro de los límites
-        Vector2 spawnPosition = GetRandomPointInBounds();
+        int maxAttempts = 10;
 
-        // Instanciar el enemigo en la posición generada
-        // prefab, posición, sin rotar
-        Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
-    }
-
-    // Obtener una posición aleatoria dentro de bounds
-    Vector2 GetRandomPointInBounds()
-    {
-        Vector2 point = Vector2.zero; 
-        while (!IsPointInsideBounds(point))
+        for (int i = 0; i < maxAttempts; i++)
         {
-            // Obtener el punto dentro del área delimitada por el collider, haciendo un random between
-            point = new Vector2(
-                Random.Range(bounds.bounds.min.x, bounds.bounds.max.x),
-                Random.Range(bounds.bounds.min.y, bounds.bounds.max.y/3)
-            );
-        } 
+            Vector2 candidatePosition = GetRandomPointInPolygon();
+            if (IsPositionValid(candidatePosition))
+                return candidatePosition;
+        }
 
-        return point;
+        // Si no se encuentra una posición válida, retornar Vector2.zero
+        return Vector2.zero;
     }
 
-    // El area esta dentro del mapa??
-    bool IsPointInsideBounds(Vector2 point)
+    Vector2 GetRandomPointInPolygon(float margin = 15f)
     {
-        return bounds.OverlapPoint(point);
+        int pathIndex = Random.Range(0, bounds.pathCount);
+        Vector2[] pathPoints = bounds.GetPath(pathIndex);
+
+        // Determinamos los límites mínimos y máximos del área del polígono
+        float minX = Mathf.Min(pathPoints[0].x, pathPoints[1].x, pathPoints[2].x) + margin;
+        float maxX = Mathf.Max(pathPoints[0].x, pathPoints[1].x, pathPoints[2].x) - margin;
+        float minY = 0.4f;
+        float maxY = Mathf.Max(pathPoints[0].y, pathPoints[1].y, pathPoints[2].y) - margin;
+
+        // Generamos un punto aleatorio dentro de estos nuevos límites
+        float randomX = Random.Range(minX, maxX);
+        float randomY = Random.Range(minY, maxY);
+
+        return new Vector2(randomX, randomY);
     }
 
-    // Sube contador de muertes
+
+    bool IsPositionValid(Vector2 position)
+    {
+        foreach (Vector2 spawnedPosition in spawnedPositions)
+        {
+            if (Vector2.Distance(spawnedPosition, position) < minDistanceBetweenEnemies)
+                return false;
+        }
+
+        return bounds.OverlapPoint(position);
+    }
+
     public void EnemyDied()
     {
         enemiesDead++;
+        Debug.Log($"[EnemySpawner] Enemigo eliminado. Total muertos: {enemiesDead}");
     }
 }
