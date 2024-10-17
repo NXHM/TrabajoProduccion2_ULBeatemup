@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +12,9 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]
     private float m_RaycastDistance = 3f;
     [SerializeField]
-    private float m_AttackRangeDistance = 1.5f;
+    private float m_AttackRangeDistance = 8f;
+    [SerializeField]
+    private float m_ChaseDistance = 4f;
     [SerializeField]
     private float m_AttackMeleeDistance = 0.5f;
     [SerializeField]
@@ -23,118 +24,122 @@ public class EnemyMovement : MonoBehaviour
     private EnemyState m_State = EnemyState.Idle;
     private Animator m_SpriteAnimator;
     private bool m_IsTalking = false;
-    private Transform m_Player = null;
-    [SerializeField] private Collider2D m_objectCollider;
-    private Collider2D m_PlayerHitbox = null;
-    private void Awake() 
+    public Transform m_Player = null;
+
+    private void Awake()
     {
         m_SpriteAnimator = transform.Find("Sprite").GetComponent<Animator>();
-        //m_RaycastGenerator = transform.Find("RaycastGenerator");
     }
 
-    private void Update() 
+    private void Update()
     {
         float distance = GetPlayerDistance();
         if (distance > 0f)
         {
-            AttackorChase(distance);
-        }else{
+            AttackOrChase(distance);
+        }
+        else
+        {
             m_State = EnemyState.Idle;
         }
 
-        switch(m_State)
+        switch (m_State)
         {
             case EnemyState.Idle:
                 OnIdle();
-            break;
+                break;
             case EnemyState.Chasing:
                 OnChase();
-            break;
+                break;
             case EnemyState.AttackMelee:
-                OnAttack();
-            break;
+                OnAttackMelee();
+                break;
             case EnemyState.AttackRange:
                 OnAttackRange();
-            break;
+                break;
         }
     }
 
-    private void OnIdle()
-    {}
+    private void OnIdle() { }
 
     private void OnChase()
     {
-        if (m_Player == null)
-        {
-            return;
-        }
+        if (m_Player == null) return;
 
         Vector3 dir = (m_Player.position - transform.position).normalized;
         transform.position += m_Speed * Time.deltaTime * dir;
     }
 
-    private void OnAttack()
-    {}
+    private void OnAttackMelee()
+    {
+        m_SpriteAnimator.SetTrigger("MeleeAttack");
+    }
 
     private void OnAttackRange()
     {
         m_SpriteAnimator.SetTrigger("RangeAttack");
+
+        // Disparar proyectil al atacar a distancia
+        GetComponent<EnemyAttack>()?.FireProjectile();
     }
-    
-    private void OnAttackMelee()
-    {
-        m_SpriteAnimator.SetTrigger("RangeMelee");
-    }
-    private void AttackorChase(float distance)
+
+    private void AttackOrChase(float distance)
     {
         if (distance < m_AttackMeleeDistance)
         {
             m_State = EnemyState.AttackMelee;
         }
-        else if (distance < m_AttackRangeDistance)
-        {
-            m_State = EnemyState.AttackRange;
-        }
-        else
+        else if (distance <= m_ChaseDistance)
         {
             m_State = EnemyState.Chasing;
         }
-        
+        else if (distance <= m_AttackRangeDistance)
+        {
+            m_State = EnemyState.AttackRange;
+        }
     }
 
-    private float GetPlayerDistance()
+    public float GetPlayerDistance()
     {
-        // Lanzas el Raycast
         var hit = Physics2D.Raycast(
-            m_RaycastGenerator.position,
-            Vector2.left,
-            m_RaycastDistance,
-            LayerMask.GetMask("Hitbox")
+            m_RaycastGenerator.position, Vector2.left,
+            m_RaycastDistance, LayerMask.GetMask("Hitbox")
         );
+
         if (hit.collider != null)
         {
-            // Hay una colision con player
             m_Player = hit.collider.transform;
-            Vector3 playerPos = m_Player.position;
-            return Vector3.Distance(playerPos, transform.position);
+            return Vector3.Distance(m_Player.position, transform.position);
         }
 
         hit = Physics2D.Raycast(
-            m_RaycastGenerator.position,
-            Vector2.right,
-            m_RaycastDistance,
-            LayerMask.GetMask("Hitbox")
+            m_RaycastGenerator.position, Vector2.right,
+            m_RaycastDistance, LayerMask.GetMask("Hitbox")
         );
+
         if (hit.collider != null)
         {
-            // Hay una colision con enemigo
             m_Player = hit.collider.transform;
-            Vector3 playerPos = m_Player.position;
-            return Vector3.Distance(playerPos, transform.position);
+            return Vector3.Distance(m_Player.position, transform.position);
         }
 
         m_Player = null;
         return -1;
+    }
+
+    public void TriggerMeleeAttack()
+    {
+        m_SpriteAnimator.SetTrigger("MeleeAttack");
+    }
+
+    public void TriggerRangeAttack()
+    {
+        m_SpriteAnimator.SetTrigger("RangeAttack");
+    }
+
+    public void SetState(EnemyState state)
+    {
+        m_State = state;
     }
 
     public void Talk()
@@ -143,23 +148,18 @@ public class EnemyMovement : MonoBehaviour
         {
             m_SpriteAnimator.SetTrigger("Talk");
             m_IsTalking = true;
-        }else
+        }
+        else
         {
             m_SpriteAnimator.SetTrigger("StopTalk");
             m_IsTalking = false;
         }
     }
 
-    private void OnDrawGizmos() 
+    private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawRay(
-            m_RaycastGenerator.position,
-            Vector2.left * m_RaycastDistance
-        );
-        Gizmos.DrawRay(
-            m_RaycastGenerator.position,
-            Vector2.right * m_RaycastDistance
-        );
+        Gizmos.DrawRay(m_RaycastGenerator.position, Vector2.left * m_RaycastDistance);
+        Gizmos.DrawRay(m_RaycastGenerator.position, Vector2.right * m_RaycastDistance);
     }
 }
