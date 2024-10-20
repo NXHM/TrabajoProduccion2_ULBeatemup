@@ -6,7 +6,10 @@ using DG.Tweening;
 public class Boss : MonoBehaviour
 {
     [SerializeField] private Vector2 tiempoEspera;
-    [SerializeField] private Transform bossSprite;
+    [SerializeField] private float velSalto = 20f, tiempoAire = 1.5f;
+    [SerializeField] private Transform piso, bossSprite;
+    [SerializeField] private Animator anim;
+    private bool esperaSalto;
     //[SerializeField] private Rigidbody2D rbSalto;
 
     void OnValidate()
@@ -33,13 +36,15 @@ public class Boss : MonoBehaviour
 
     private IEnumerator Attack1()
     {
-        int n = Random.Range(1,2);
+        anim.SetTrigger("Attack1");
+        int n = 3;//Random.Range(1,2);
         for(int i=0; i<n; i++)
         {
+            yield return new WaitUntil(() => esperaSalto);
             yield return StartCoroutine(Jump());
-            float aux = 0.5f;
-            transform.DOMove(Camera.main.ScreenToWorldPoint(new Vector3(Random.Range(0, Screen.width), Random.Range(0, Screen.height))), aux);
-            yield return new WaitForSeconds(aux);
+            piso.transform.DOMove(Camera.main.ScreenToWorldPoint(new Vector3(Random.Range(0, Screen.width), Random.Range(0, Screen.height))), tiempoAire);
+            yield return new WaitForSeconds(tiempoAire);
+            Debug.Log("dd");
             yield return StartCoroutine(Fall());
         }
     }
@@ -48,7 +53,7 @@ public class Boss : MonoBehaviour
     {
         while (bossSprite.localPosition.y < 6.5f)
         {
-            bossSprite.localPosition += 20f * Time.deltaTime * Vector3.up;
+            bossSprite.localPosition += velSalto * Time.deltaTime * Vector3.up;
             yield return null;
         }
     }
@@ -57,10 +62,16 @@ public class Boss : MonoBehaviour
     {
         while (bossSprite.localPosition.y > 0)
         {
-            bossSprite.localPosition -= 20f * Time.deltaTime * Vector3.up;
+            bossSprite.localPosition -= velSalto * Time.deltaTime * Vector3.up;
             yield return null;
         }
+        Debug.Log("deee");
         bossSprite.localPosition = Vector3.zero;
+    }
+
+    public void EsperaSalto()
+    {
+        esperaSalto = true;
     }
 
 }
