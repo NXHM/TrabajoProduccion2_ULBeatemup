@@ -74,7 +74,7 @@ public class EnemyAttack : MonoBehaviour
             if (projectile != null)
             {
                 // Establece la posición inicial del proyectil
-                projectile.transform.position = transform.position + new Vector3(0.5f, 1f, 0); // Dispara desde la derecha del enemigo
+                projectile.transform.position = transform.position + new Vector3(0.5f, 1f, 0); 
 
                 // Establece el objetivo del proyectil
                 Shuriken projectileScript = projectile.GetComponent<Shuriken>();

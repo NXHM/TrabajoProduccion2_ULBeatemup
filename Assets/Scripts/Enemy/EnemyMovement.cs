@@ -10,13 +10,13 @@ public enum EnemyState
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField]
-    private float m_RaycastDistance = 3f;
+    private float m_RaycastDistance = 8f;
     [SerializeField]
     private float m_AttackRangeDistance = 8f;
     [SerializeField]
     private float m_ChaseDistance = 4f;
     [SerializeField]
-    private float m_AttackMeleeDistance = 0.5f;
+    private float m_AttackMeleeDistance = 1f;
     [SerializeField]
     private float m_Speed = 4f;
     [SerializeField]
