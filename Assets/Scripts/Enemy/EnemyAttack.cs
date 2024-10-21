@@ -3,128 +3,118 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour
 {
     [SerializeField]
-    private EnemyMovement enemyMovement;
-
-    [SerializeField]
-    private float shootDistance = 8f; // Distancia para disparar
-    [SerializeField]
-    private float chaseDistance = 4f; // Distancia para perseguir
-    [SerializeField]
     private float meleeDistance = 1f; // Distancia para ataque cuerpo a cuerpo
-    [SerializeField]
-    private float projectileSpeed = 0.1f; // Velocidad del proyectil
     [SerializeField]
     private float attackCooldown = 2f; // Tiempo de cooldown entre ataques de rango
     private float lastAttackTime = -Mathf.Infinity; // Registro del último ataque
     private ProjectilePoolManager projectilePoolManager; // Referencia al Pool Manager
 
-    // Daños de los ataques
     [SerializeField]
-    private float meleeDamage = 1f; // Daño del ataque melee
+    private float meleeDamage = 1f; // Daño del ataque cuerpo a cuerpo
     [SerializeField]
-    private float rangeDamageMax = 1.5f; // Daño máximo del ataque de rango (cuando está cerca)
+    private float rangeDamageMax = 1.5f; // Daño máximo del ataque de rango
     [SerializeField]
-    private float rangeDamageMin = 0.5f; // Daño mínimo del ataque de rango (cuando está lejos)
+    private float rangeDamageMin = 0.5f; // Daño mínimo del ataque de rango
+
+    private Animator m_SpriteAnimator; // Referencia al Animator
+    public bool isPerformingMeleeAttack = false;
+    public bool isPerformingRangeAttack = false;
+
+    private EnemyMovement enemyMovement; // Referencia a EnemyMovement
 
     private void Awake()
     {
-        enemyMovement = GetComponent<EnemyMovement>();
-        projectilePoolManager = FindObjectOfType<ProjectilePoolManager>();
+        m_SpriteAnimator = transform.Find("Sprite").GetComponent<Animator>(); // Referencia al Animator
+        enemyMovement = GetComponent<EnemyMovement>(); // Asigna EnemyMovement
+        projectilePoolManager = FindObjectOfType<ProjectilePoolManager>(); // Encuentra el Pool Manager para proyectiles
     }
 
-    private void Update()
+    // Método para desencadenar el ataque cuerpo a cuerpo
+    public void TriggerMeleeAttack()
     {
-        if (enemyMovement == null) return;
-
-        float distance = enemyMovement.GetPlayerDistance();
-        if (distance < 0) return; // No hay jugador detectado
-
-        HandleAttack(distance);
-    }
-
-    private void HandleAttack(float distance)
-    {
-        if (distance < meleeDistance)
+        if (!isPerformingMeleeAttack)
         {
-            PerformMeleeAttack();
-        }
-        else if (distance <= chaseDistance)
-        {
-            ChasePlayer();
-        }
-        else if (distance <= shootDistance && Time.time >= lastAttackTime + attackCooldown)
-        {
-            PerformRangeAttack(distance);
+            isPerformingMeleeAttack = true;  // Marca que está atacando
+            m_SpriteAnimator.Play("MeleeAttack");  // Fuerza la reproducción de la animación de ataque cuerpo a cuerpo
+            Debug.Log("Iniciando ataque cuerpo a cuerpo");
+
+            // Si algo falla, asegura el reseteo después de 1.5 segundos (ajusta según la duración de la animación)
+            Invoke("ResetMeleeAttack", 1.5f);
         }
     }
 
-    private void PerformMeleeAttack()
+    // Método para desencadenar el ataque a distancia
+    public void TriggerRangeAttack()
     {
-        Debug.Log("Realizando ataque cuerpo a cuerpo");
-        enemyMovement.TriggerMeleeAttack();
-        ApplyMeleeDamage();
+        if (!isPerformingRangeAttack && Time.time >= lastAttackTime + attackCooldown)
+        {
+            isPerformingRangeAttack = true;  // Marca que está atacando
+            lastAttackTime = Time.time;  // Registra el tiempo del último ataque
+            m_SpriteAnimator.Play("RangeAttack");  // Fuerza la reproducción de la animación de ataque a distancia
+            Debug.Log("Iniciando ataque a distancia");
+
+            // Si algo falla, asegura el reseteo después de 1.5 segundos (ajusta según la duración de la animación)
+            Invoke("ResetRangeAttack", 1.5f);
+        }
     }
 
-    private void ChasePlayer()
-    {
-        Debug.Log("Persiguiendo al jugador...");
-        enemyMovement.SetState(EnemyState.Chasing);
-    }
-
-    private void PerformRangeAttack(float distance)
-    {
-        Debug.Log("Disparando proyectil");
-        enemyMovement.TriggerRangeAttack();
-        FireProjectile(distance);
-        lastAttackTime = Time.time; // Actualiza el tiempo del último ataque
-    }
-
-    private void ApplyMeleeDamage()
+    // Este método será llamado al final de la animación de ataque cuerpo a cuerpo (con Animation Event)
+    public void PerformMeleeAttack()
     {
         if (enemyMovement.m_Player != null)
         {
-            // Aplica el daño de melee al jugador
             PlayerHealth playerHealth = enemyMovement.m_Player.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(meleeDamage);
-                Debug.Log($"El jugador recibió {meleeDamage} de daño por ataque cuerpo a cuerpo.");
+                playerHealth.TakeDamage(meleeDamage);  // Aplica el daño cuerpo a cuerpo
+                Debug.Log("Daño cuerpo a cuerpo aplicado");
             }
         }
+        isPerformingMeleeAttack = false;  // Resetea el estado para permitir futuros ataques
+        Debug.Log("isPerformingMeleeAttack reseteado en PerformMeleeAttack");
     }
 
-    public void FireProjectile(float distance)
+    public void PerformRangeAttack()
     {
-        // Asegúrate de que el Pool Manager no sea nulo
-        if (projectilePoolManager != null && enemyMovement.m_Player != null)
+        if (enemyMovement.m_Player != null)
         {
             GameObject projectile = projectilePoolManager.GetProjectile();
             if (projectile != null)
             {
-                // Establece la posición inicial del proyectil
-                projectile.transform.position = transform.position + new Vector3(0.5f, 1.5f, 0); // Ajustar si es necesario
+                // Configuración del proyectil
+                projectile.transform.position = transform.position + new Vector3(0.5f, 1.5f, 0); // Ajustar la posición según sea necesario
 
-                // Establece el objetivo del proyectil
+                // Asignar el objetivo y la velocidad del proyectil
                 Shuriken projectileScript = projectile.GetComponent<Shuriken>();
                 if (projectileScript != null)
                 {
-                    projectileScript.SetTarget(enemyMovement.m_Player); // Asigna el jugador como objetivo
-                    projectileScript.SetDamage(distance, rangeDamageMax, rangeDamageMin, shootDistance); // Asigna el daño
+                    projectileScript.SetTarget(enemyMovement.m_Player);  // Establecer el jugador como objetivo
+                    float distance = enemyMovement.GetPlayerDistance();
+                    projectileScript.SetDamage(distance, rangeDamageMax, rangeDamageMin, meleeDistance);  // Configurar el daño en función de la distancia
                 }
 
-                // Establece la rotación inicial del proyectil
-                projectile.transform.rotation = Quaternion.identity;
-
-                Debug.Log("Proyectil disparado hacia el jugador.");
+                // Activar el proyectil
+                projectile.SetActive(true);
+                Debug.Log("Proyectil lanzado");
             }
             else
             {
-                Debug.LogWarning("No se pudo obtener un proyectil del pool.");
+                Debug.LogWarning("No se encontró proyectil en el pool");
             }
         }
-        else
-        {
-            Debug.LogWarning("Projectile Pool Manager no encontrado o jugador no asignado.");
-        }
+    }
+
+
+    // Funciones de reseteo de failsafe por si OnStateExit no lo hace correctamente
+    private void ResetMeleeAttack()
+    {
+        isPerformingMeleeAttack = false;
+        Debug.Log("isPerformingMeleeAttack reseteado mediante Invoke");
+    }
+
+    private void ResetRangeAttack()
+    {
+        isPerformingRangeAttack = false;
+        Debug.Log("isPerformingRangeAttack reseteado mediante Invoke");
     }
 }

@@ -1,34 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public enum EnemyState
 {
-    Idle, Chasing, AttackMelee, AttackRange
+    Idle,         // El enemigo está esperando
+    Chasing,      // El enemigo está persiguiendo al jugador
+    AttackMelee,  // El enemigo está atacando cuerpo a cuerpo
+    AttackRange   // El enemigo está atacando a distancia
 }
 
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField]
-    private float m_RaycastDistance = 8f;
+    private float m_RaycastDistance = 16f;
     [SerializeField]
-    private float m_AttackRangeDistance = 8f;
+    private float m_AttackRangeDistance = 16f;
     [SerializeField]
-    private float m_ChaseDistance = 4f;
+    private float m_ChaseDistance = 8f;
     [SerializeField]
-    private float m_AttackMeleeDistance = 1f;
+    private float m_AttackMeleeDistance = 4f;
     [SerializeField]
     private float m_Speed = 4f;
     [SerializeField]
     private Transform m_RaycastGenerator;
-    private EnemyState m_State = EnemyState.Idle;
-    private Animator m_SpriteAnimator;
-    private bool m_IsTalking = false;
+
+    private EnemyState m_State = EnemyState.Idle; // Estado actual del enemigo
     public Transform m_Player = null;
+
+    private EnemyAttack enemyAttack; // Referencia al componente EnemyAttack
 
     private void Awake()
     {
-        m_SpriteAnimator = transform.Find("Sprite").GetComponent<Animator>();
+        enemyAttack = GetComponent<EnemyAttack>(); // Asigna EnemyAttack para manejar los ataques
     }
 
     private void Update()
@@ -36,14 +38,15 @@ public class EnemyMovement : MonoBehaviour
         float distance = GetPlayerDistance();
         if (distance >= 0f) // Solo si se ha detectado un jugador
         {
+            // Decidimos si perseguir o atacar
             AttackOrChase(distance);
         }
         else
         {
-            m_State = EnemyState.Idle; // No se detectó jugador, el enemigo se queda en Idle
+            SetState(EnemyState.Idle); // Si no hay jugador, el enemigo se queda en Idle
         }
 
-        // Cambiar el estado del enemigo según corresponda
+        // Gestiona los diferentes estados del enemigo
         switch (m_State)
         {
             case EnemyState.Idle:
@@ -56,10 +59,9 @@ public class EnemyMovement : MonoBehaviour
                 OnAttackMelee();
                 break;
             case EnemyState.AttackRange:
-                OnAttackRange(distance); 
+                OnAttackRange();
                 break;
         }
-
     }
 
     private void OnIdle()
@@ -72,38 +74,38 @@ public class EnemyMovement : MonoBehaviour
         if (m_Player == null) return;
 
         Vector3 dir = (m_Player.position - transform.position).normalized;
-        transform.position += m_Speed * Time.deltaTime * dir;
+        transform.position += m_Speed * Time.deltaTime * dir; // Persigue al jugador
     }
 
     private void OnAttackMelee()
     {
-        m_SpriteAnimator.SetTrigger("MeleeAttack");
+        enemyAttack.TriggerMeleeAttack();  // Desencadena el ataque cuerpo a cuerpo en EnemyAttack
     }
 
-    private void OnAttackRange(float distance)
+    private void OnAttackRange()
     {
-        m_SpriteAnimator.SetTrigger("RangeAttack");
-
-        // Disparar proyectil al atacar a distancia, pasando la distancia como argumento
-        GetComponent<EnemyAttack>()?.FireProjectile(distance);
+        Debug.Log("OnAttackRange ejecutado");
+        enemyAttack.TriggerRangeAttack();  // Desencadena el ataque a distancia en EnemyAttack
     }
-
 
     private void AttackOrChase(float distance)
     {
         if (distance < m_AttackMeleeDistance)
         {
-            m_State = EnemyState.AttackMelee;
+            Debug.Log("ATACA cuerpo a cuerpo");
+            SetState(EnemyState.AttackMelee);  // Cambia el estado para cuerpo a cuerpo
         }
         else if (distance <= m_ChaseDistance)
         {
-            m_State = EnemyState.Chasing;
+            SetState(EnemyState.Chasing);  // Persigue al jugador
         }
         else if (distance <= m_AttackRangeDistance)
         {
-            m_State = EnemyState.AttackRange;
+            Debug.Log("ATACA a distancia");
+            SetState(EnemyState.AttackRange);  // Cambia el estado para ataque a distancia
         }
     }
+
 
     public float GetPlayerDistance()
     {
@@ -118,7 +120,7 @@ public class EnemyMovement : MonoBehaviour
             m_Player = hit.collider.transform;
             return Vector3.Distance(m_Player.position, transform.position);
         }
-
+ 
         // Si no se encontró a un jugador hacia la izquierda, realiza un raycast hacia la derecha
         hit = Physics2D.Raycast(
             m_RaycastGenerator.position, Vector2.right,
@@ -136,39 +138,14 @@ public class EnemyMovement : MonoBehaviour
         return -1f; // Indica que no se encontró al jugador
     }
 
-    public void TriggerMeleeAttack()
-    {
-        m_SpriteAnimator.SetTrigger("MeleeAttack");
-    }
-
-    public void TriggerRangeAttack()
-    {
-        m_SpriteAnimator.SetTrigger("RangeAttack");
-    }
-
     public void SetState(EnemyState state)
     {
         m_State = state;
     }
 
-    public void Talk()
+    public EnemyState GetState()
     {
-        if (!m_IsTalking)
-        {
-            m_SpriteAnimator.SetTrigger("Talk");
-            m_IsTalking = true;
-        }
-        else
-        {
-            m_SpriteAnimator.SetTrigger("StopTalk");
-            m_IsTalking = false;
-        }
+        return m_State;
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.green;
-        Gizmos.DrawRay(m_RaycastGenerator.position, Vector2.left * m_RaycastDistance);
-        Gizmos.DrawRay(m_RaycastGenerator.position, Vector2.right * m_RaycastDistance);
-    }
 }
