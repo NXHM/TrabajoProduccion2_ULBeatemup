@@ -9,7 +9,7 @@ public class Boss : MonoBehaviour
     [SerializeField] private float velSalto = 20f, tiempoAire = 1.5f;
     [SerializeField] private Transform piso, bossSprite;
     [SerializeField] private Animator anim;
-    [SerializeField] private Collider2D col;
+    [SerializeField] private Collider2D col, colDamage;
     private bool esperaSalto;
     //[SerializeField] private Rigidbody2D rbSalto;
 
@@ -20,6 +20,7 @@ public class Boss : MonoBehaviour
 
     void Start()
     {
+        colDamage.enabled = false;
         StartCoroutine(Behaviour());
     }
 
@@ -38,6 +39,7 @@ public class Boss : MonoBehaviour
         yield return new WaitUntil(() => esperaSalto);
         esperaSalto = false;
         col.enabled = false;
+        colDamage.enabled = true;
         int n = Random.Range(3,6);
         for(int i=0; i<n; i++)
         {   
@@ -56,6 +58,7 @@ public class Boss : MonoBehaviour
         bossSprite.DOLocalMoveX(0f, 0);
         yield return StartCoroutine(Land());
         col.enabled = true;
+        colDamage.enabled = false;
     }
 
     private IEnumerator Jump()
