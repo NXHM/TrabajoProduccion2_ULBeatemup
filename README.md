@@ -4,16 +4,33 @@
 
 # Requerimiento 1: Barra de Vida
 
-- **Descripción**: Implementar una barra de vida para el jugador que descienda cada vez que reciba ataques de los enemigos.
+- **Descripción**: Este proyecto implementa un sistema de barras de vida tanto para el jugador como para los enemigos, utilizando técnicas y métodos inspirados en el video tutorial de Unity "Health Bars in Unity". El objetivo es gestionar de manera visual y funcional la vida de los personajes dentro del juego, permitiendo un mejor seguimiento de los puntos de vida restantes, tanto para el jugador como para los enemigos.
   - **Ejemplo Visual**: [Video de referencia](https://www.youtube.com/watch?v=BLfNP4Sc_iA)
-  
-- **Características**:
-  - La barra de vida debe ser visible en pantalla y actualizarse en tiempo real.
-  - Cada enemigo también debe tener su propia barra de vida, visible en su posición.
-  - El color de la barra de vida de los enemigos debe cambiar dependiendo del nivel de daño recibido (por ejemplo: verde para daño bajo, amarillo para daño medio, rojo para daño alto).
+
+- **Implementación**
+El sistema de barras de vida se desarrolló utilizando Canvas y componentes de Image en Unity, lo cual facilita la personalización visual y la gestión dinámica del estado de vida. Para cada personaje, se ha creado un script llamado Health.cs, encargado de almacenar, modificar y visualizar la vida.
+
+ - Detalles Técnicos:
+Barra de Vida del Jugador:
+La barra de vida del jugador se actualiza cada vez que recibe daño por parte de los enemigos. En caso de que la vida llegue a cero, el jugador es automáticamente reaparecido en el punto inicial del nivel, reiniciando sus puntos de vida al valor máximo configurado.
+
+ - Barras de Vida de los Enemigos:
+Cada enemigo tiene una barra de vida independiente, que se actualiza en tiempo real al recibir daño. Además, se implementó un sistema de colores progresivos para las barras de los enemigos utilizando un Gradient, de modo que el color de la barra cambia visualmente según el nivel de vida restante.
+
+ - Sistema de Daño:
+Se ha implementado un sistema de colisión y detección de impactos, que permite a los enemigos y al jugador recibir daño y disminuir sus puntos de vida. El método TakeDamage(float amount) en el script Health.cs gestiona la reducción de vida y la actualización visual de las barras.
+
+- **Código**
+El script Health.cs incluye métodos para recibir daño, actualizar la barra de vida y gestionar la muerte del personaje. Los puntos clave del código incluyen:
+
+- Método TakeDamage: Reduce los puntos de vida del personaje al recibir daño y actualiza visualmente la barra de vida.
+Método UpdateHealthBar: Ajusta el relleno (fillAmount) y el color de la barra según el porcentaje de vida restante.
+Método Die: Reaparece al jugador al inicio del nivel o destruye a los enemigos cuando su vida se agota.
 
 - **Comportamiento**:
-  - Cuando el jugador muera, debe reaparecer al inicio del nivel.
+ Jugador: La barra de vida del jugador disminuye gradualmente al recibir ataques. Si la vida llega a cero, el jugador reaparece en la posición inicial del nivel con su vida restaurada.
+Enemigos: Cada enemigo posee su propia barra de vida, que cambia de color según la cantidad de vida restante. Cuando la vida de un enemigo se agota, este es destruido automáticamente.
+Actualización Visual: La actualización visual de las barras es fluida, permitiendo a los jugadores seguir fácilmente el estado de vida de sus personajes y sus enemigos.
 
 ---
 
