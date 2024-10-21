@@ -10,6 +10,7 @@ public class EnemyHitbox : MonoBehaviour
     [SerializeField] private bool isBoss;
 
     [SerializeField] Boss boss;
+    [SerializeField] EnemyHealth enemyHealth;
 
     public void Hit()
     {
@@ -19,6 +20,8 @@ public class EnemyHitbox : MonoBehaviour
                 gameObject.transform.Find("Light");
             light.gameObject.SetActive(true);
             m_EnemyAnimator.SetTrigger("ReceiveAttack");
+            enemyHealth.TakeDamage(0.20f);
+
         }
         else
         {

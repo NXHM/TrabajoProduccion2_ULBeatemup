@@ -15,16 +15,16 @@ public class EnemyAttack : MonoBehaviour
     private float projectileSpeed = 0.1f; // Velocidad del proyectil
     [SerializeField]
     private float attackCooldown = 2f; // Tiempo de cooldown entre ataques de rango
-    private float lastAttackTime = -Mathf.Infinity; // Registro del último ataque
+    private float lastAttackTime = -Mathf.Infinity; // Registro del ï¿½ltimo ataque
     private ProjectilePoolManager projectilePoolManager; // Referencia al Pool Manager
 
-    // Daños de los ataques
+    // Daï¿½os de los ataques
     [SerializeField]
-    private float meleeDamage = 1f; // Daño del ataque melee
+    private float meleeDamage = 0.10f; // Daï¿½o del ataque melee
     [SerializeField]
-    private float rangeDamageMax = 1.5f; // Daño máximo del ataque de rango (cuando está cerca)
+    private float rangeDamageMax = 0.10f; // Daï¿½o mï¿½ximo del ataque de rango (cuando estï¿½ cerca)
     [SerializeField]
-    private float rangeDamageMin = 0.5f; // Daño mínimo del ataque de rango (cuando está lejos)
+    private float rangeDamageMin = 0.05f; // Daï¿½o mï¿½nimo del ataque de rango (cuando estï¿½ lejos)
 
     private void Awake()
     {
@@ -76,32 +76,33 @@ public class EnemyAttack : MonoBehaviour
         Debug.Log("Disparando proyectil");
         enemyMovement.TriggerRangeAttack();
         FireProjectile(distance);
-        lastAttackTime = Time.time; // Actualiza el tiempo del último ataque
+        lastAttackTime = Time.time; // Actualiza el tiempo del ï¿½ltimo ataque
     }
 
     private void ApplyMeleeDamage()
     {
         if (enemyMovement.m_Player != null)
         {
-            // Aplica el daño de melee al jugador
-            PlayerHealth playerHealth = enemyMovement.m_Player.GetComponent<PlayerHealth>();
+            GameObject player = GameObject.FindWithTag("PlayerHealthBar");
+            // Aplica el daï¿½o de melee al jugador
+            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(meleeDamage);
-                Debug.Log($"El jugador recibió {meleeDamage} de daño por ataque cuerpo a cuerpo.");
+                Debug.Log($"El jugador recibiï¿½ {meleeDamage} de daï¿½o por ataque cuerpo a cuerpo.");
             }
         }
     }
 
     public void FireProjectile(float distance)
     {
-        // Asegúrate de que el Pool Manager no sea nulo
+        // Asegï¿½rate de que el Pool Manager no sea nulo
         if (projectilePoolManager != null && enemyMovement.m_Player != null)
         {
             GameObject projectile = projectilePoolManager.GetProjectile();
             if (projectile != null)
             {
-                // Establece la posición inicial del proyectil
+                // Establece la posiciï¿½n inicial del proyectil
                 projectile.transform.position = transform.position + new Vector3(0.5f, 1.5f, 0); // Ajustar si es necesario
 
                 // Establece el objetivo del proyectil
@@ -109,10 +110,10 @@ public class EnemyAttack : MonoBehaviour
                 if (projectileScript != null)
                 {
                     projectileScript.SetTarget(enemyMovement.m_Player); // Asigna el jugador como objetivo
-                    projectileScript.SetDamage(distance, rangeDamageMax, rangeDamageMin, shootDistance); // Asigna el daño
+                    projectileScript.SetDamage(distance, rangeDamageMax, rangeDamageMin, shootDistance); // Asigna el daï¿½o
                 }
 
-                // Establece la rotación inicial del proyectil
+                // Establece la rotaciï¿½n inicial del proyectil
                 projectile.transform.rotation = Quaternion.identity;
 
                 Debug.Log("Proyectil disparado hacia el jugador.");

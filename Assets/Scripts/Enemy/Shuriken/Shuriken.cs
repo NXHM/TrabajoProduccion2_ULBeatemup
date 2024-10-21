@@ -5,10 +5,10 @@ public class Shuriken : MonoBehaviour
     [SerializeField]
     private float speed = 5f; // Velocidad del proyectil
     [SerializeField]
-    private float maxLifetime = 3f; // Tiempo máximo de vida del proyectil
+    private float maxLifetime = 3f; // Tiempo mï¿½ximo de vida del proyectil
     private Transform target; // Referencia al objetivo (jugador u otro objeto)
     private float lifetime; // Tiempo de vida restante del proyectil
-    private float damage; // Daño que infligirá el proyectil
+    private float damage; // Daï¿½o que infligirï¿½ el proyectil
 
     private void OnEnable()
     {
@@ -23,7 +23,7 @@ public class Shuriken : MonoBehaviour
             MoveTowardsTarget();
         }
 
-        // Reduce el tiempo de vida y devuelve el proyectil si excede el tiempo máximo
+        // Reduce el tiempo de vida y devuelve el proyectil si excede el tiempo mï¿½ximo
         lifetime -= Time.deltaTime;
         if (lifetime <= 0f)
         {
@@ -38,13 +38,13 @@ public class Shuriken : MonoBehaviour
 
     public void SetDamage(float distance, float maxDamage, float minDamage, float maxDistance)
     {
-        // Calcula el daño basado en la distancia entre el enemigo y el jugador
+        // Calcula el daï¿½o basado en la distancia entre el enemigo y el jugador
         damage = Mathf.Lerp(maxDamage, minDamage, distance / maxDistance);
     }
 
     private void MoveTowardsTarget()
     {
-        // Calcula la dirección hacia el objetivo
+        // Calcula la direcciï¿½n hacia el objetivo
         Vector3 direction = (target.position - transform.position).normalized;
 
         // Mueve el proyectil usando Rigidbody2D
@@ -59,16 +59,18 @@ public class Shuriken : MonoBehaviour
         {
             Debug.Log("Shuriken ha colisionado con el jugador");
 
-            PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
+            GameObject player = GameObject.FindWithTag("PlayerHealthBar");
+            // Aplica el daï¿½o de melee al jugador
+            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                Debug.Log($"Aplicando {damage} de daño al jugador");
-                playerHealth.TakeDamage(damage); // Aplica el daño al jugador
-                Debug.Log($"El jugador recibió {damage} de daño por el shuriken.");
+                Debug.Log($"Aplicando {damage} de daï¿½o al jugador");
+                playerHealth.TakeDamage(0.20f); // Aplica el daï¿½o al jugador
+                Debug.Log($"El jugador recibiï¿½ {damage} de daï¿½o por el shuriken.");
             }
             else
             {
-                Debug.LogWarning("No se encontró el componente PlayerHealth en el jugador.");
+                Debug.LogWarning("No se encontrï¿½ el componente PlayerHealth en el jugador.");
             }
 
             // Devuelve el proyectil al pool (o lo desactiva) al impactar con el jugador

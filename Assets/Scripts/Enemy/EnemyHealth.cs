@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     [SerializeField]
     private float maxHealth = 1f; // Vida m�xima del jugador
@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     private Transform healthBarFill;
     private Vector3 originalScale;
 
-    public Vector3 initpos; 
+    private Vector3 initpos; 
     
 
 
@@ -19,11 +19,14 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth; // Inicia con la vida m�xima
         originalScale = healthBarFill.localScale;
-        initpos = transform.position;
 
         UpdateHealthBar();
     }
 
+    void Update()
+    {
+        UpdateHealthBar();
+    }
 
     // M�todo para reducir la vida del jugador
     public void TakeDamage(float damage)
@@ -42,25 +45,24 @@ public class PlayerHealth : MonoBehaviour
     // M�todo para manejar la muerte del jugador
     private void Die()
     {
-
-        Heal(1f);
+        Destroy(gameObject);
     }
 
     // M�todo para curar al jugador
     public void Heal(float amount)
     {
-        Renderer renderer = healthBarFill.GetComponent<Renderer>();
-        currentHealth = maxHealth;
+        currentHealth += amount;
         if (currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
-            renderer.material.color = Color.green;
         }
         Debug.Log($"El jugador se ha curado. Vida actual: {currentHealth}");
     }
 
     private void UpdateHealthBar()
     {  
+
+    
 
     healthBarFill.localScale = new Vector3(originalScale.x * currentHealth , originalScale.y, originalScale.z);
 
@@ -72,11 +74,16 @@ public class PlayerHealth : MonoBehaviour
     }
     else if (currentHealth> 0.5f)
     {
+        Debug.Log("Amarillo");
         renderer.material.color = Color.yellow;
     }
     else if (currentHealth > 0.25f)
     {
-        renderer.material.color = new Color(1f, 0.65f, 0f);
+        renderer.material.color = new Color(1f, 0.65f, 0f); // Anaranjado
+    }
+    else if (currentHealth <= 0f)
+    {
+        // Llama a la función de muerte cuando la salud llega a 0
     }
     else
     {

@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "2024-2_ULBeatemup.sln"
+    "dotnet.defaultSolution": "TrabajoProduccion2_ULBeatemup.sln"
 }
