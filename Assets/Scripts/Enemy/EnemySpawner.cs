@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
     public float spawnInterval = 3f;
     public float initialSpawnDelay = 10f;
 
-    public int maxEnemies = 5; // Número máximo de enemigos que pueden estar activos simultáneamente
+    public int maxEnemies = 2; // Número máximo de enemigos que pueden estar activos simultáneamente
 
     private bool isSpawnerActive = true;
 

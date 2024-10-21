@@ -1783,7 +1783,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 1600986449}
   spawnInterval: 3
   initialSpawnDelay: 10
-  maxEnemies: 5
+  maxEnemies: 2
   bounds: {fileID: 522088963}
   minDistanceBetweenEnemies: 1.5
 --- !u!4 &1408334285
