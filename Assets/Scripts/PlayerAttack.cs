@@ -42,4 +42,14 @@ public class PlayerAttack : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawSphere(m_AttackQueryPoint.position, m_AttackRange);
     }*/
+
+    void OnCollisionEnter(Collision collision)
+{
+    Health health = collision.gameObject.GetComponent<Health>();
+    if (health != null)
+    {
+        health.TakeDamage(20f); // Ajusta el valor de daño según sea necesario
+    }
+}
+
 }

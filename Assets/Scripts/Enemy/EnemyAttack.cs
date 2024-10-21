@@ -13,9 +13,7 @@ public class EnemyAttack : MonoBehaviour
     private float meleeDistance = 0.5f; // Distancia para ataque cuerpo a cuerpo
     [SerializeField]
     private float projectileSpeed = 0.1f; // Velocidad del proyectil
-        private int meleeDamage = 10; // Daño cuerpo a cuerpo
-    [SerializeField]
-    private int rangedDamage = 5; // Daño de proyectil
+   
     private ProjectilePoolManager projectilePoolManager; // Referencia al Pool Manager
 
     private void Awake()
@@ -54,16 +52,6 @@ public class EnemyAttack : MonoBehaviour
     {
         Debug.Log("Realizando ataque cuerpo a cuerpo");
         enemyMovement.TriggerMeleeAttack();
-        
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, meleeDistance); // Detectar colisiones en rango
-        foreach (var hit in hits)
-        {
-            if (hit.CompareTag("Player"))
-            {
-                // Infligir daño al jugador
-                hit.GetComponent<PlayerHealth>().TakeDamage(meleeDamage);
-            }
-        }
     }
 
     private void ChasePlayer()
@@ -94,7 +82,7 @@ public class EnemyAttack : MonoBehaviour
                 if (projectileScript != null)
                 {
                     projectileScript.SetTarget(enemyMovement.m_Player); // Asigna el jugador como objetivo
-                    projectileScript.SetDamage(rangedDamage);
+                  
                 }
 
                 // Establece la rotaci�n inicial del proyectil
