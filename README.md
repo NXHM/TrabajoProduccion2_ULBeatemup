@@ -208,3 +208,63 @@ Clase que gestiona la aparición de enemigos en el juego. Permite definir el int
   
 - **Comportamiento**:
   - Al morir el boss, debe haber una secuencia cinemática final que cierre el juego.
+
+### Cinemática de Introducción y Salida
+1. **Descripción**:  
+Este proyecto implementa una mecánica de cinemática que introduce y concluye la batalla contra el jefe (boss). La cinemática inicial se activa al entrar en una zona específica, mientras que la cinemática final se ejecuta automáticamente al derrotar al boss. Estas cinemáticas están diseñadas para centrarse en el jefe como el foco principal, desactivando el control del jugador temporalmente durante la secuencia.
+
+2. **Implementación**:  
+Las cinemáticas se logran utilizando GameObjects que contienen los componentes `CinemachineVirtualCamera` y `PlayableDirector`, los cuales permiten reproducir secuencias enfocadas en el boss. La cinemática inicial se activa cuando el jugador entra en una zona determinada, mientras que la cinemática final se activa al morir el boss.
+
+   - **Detalles Técnicos**:
+     - **Cinemática Inicial**:
+       - **Trigger de Activación**: Se utiliza un `BoxCollider 2D` como trigger. Al detectar la colisión del jugador con el trigger, se activa la cinemática de introducción.
+       - **Desactivación del Jugador**: Durante la cinemática, el control del jugador se desactiva temporalmente para centrar la atención en el boss.
+  
+     - **Cinemática Final**:
+       - **Activación Post-Boss**: La cinemática final se ejecuta una vez que el boss es derrotado, poniendo fin al combate y mostrando el desenlace de la batalla.
+
+     - **Componentes Principales**:
+       - **CinemachineVirtualCamera**: Cámara virtual que enfoca al boss durante las cinemáticas.
+       - **PlayableDirector**: Controla la reproducción de la secuencia de la cinemática.
+       - **Trigger Collider**: Un `BoxCollider 2D` en modo trigger inicia la cinemática de introducción cuando el jugador lo cruza.
+
+3. ### **Código**:
+El script encargado de activar la cinemática inicial utiliza un `BoxCollider 2D` en modo trigger. Cuando el jugador entra en esta zona, el script detecta la colisión y ejecuta las siguientes acciones:
+   1. **OnTriggerEnter2D(Collider2D other)**: Este método verifica si el objeto que entró en el área del trigger es el jugador (mediante la etiqueta "Player"). Si es así, se activa el jefe (`boss.SetActive(true)`), se reproduce la cinemática utilizando el componente `PlayableDirector` (`m_PlayableDirector.Play()`), y se desactiva el GameObject del trigger (`gameObject.SetActive(false)`) para evitar que la cinemática se repita.
+Este flujo permite iniciar la cinemática automáticamente al entrar en el área del jefe, asegurando que la introducción solo ocurra una vez.
+
+
+4. ### **Comportamiento**:
+   - **Cinemática Inicial**: Se reproduce cuando el jugador entra en la zona de activación (trigger), enfocando al boss con la cámara virtual y desactivando temporalmente al jugador.
+   - **Cinemática Final**: Se ejecuta tras derrotar al boss, mostrando el desenlace de la batalla y concluyendo la secuencia del jefe.
+
+Este sistema de cinemáticas añade una capa cinematográfica que mejora la inmersión del jugador, proporcionando un enfoque visual dramático tanto en la introducción como en la salida del combate contra el boss.
+
+### Barra de Vida del Boss
+1. **Descripción**:  
+Este proyecto incorpora una barra de vida dinámica para el jefe (boss) del juego, diseñada para reflejar el estado de salud en todo momento durante el combate. Al morir el jefe, la barra de vida desaparece, indicando el final del enfrentamiento. Esta funcionalidad está inspirada en sistemas de vida de juegos avanzados y busca ofrecer una experiencia visual clara para los jugadores.
+  
+2. **Implementación**:  
+La barra de vida del boss se desarrolla mediante un Canvas, en el cual se incluye el componente de la barra de vida. Dentro de este Canvas, se emplean dos imágenes: una como el marco de la barra y otra para el relleno que muestra el nivel de vida restante, utilizando un gradiente que cambia según la vida del jefe. La barra desaparece automáticamente cuando el jefe es derrotado.
+
+   - **Detalles Técnicos**:
+     - **Barra de Vida del Boss**:
+       - **Canvas y Componentes**: La barra de vida del boss está compuesta por un Canvas que contiene dos imágenes: un marco decorativo y un relleno que cambia progresivamente de color de acuerdo al porcentaje de vida restante.
+  
+     - **Métodos Principales**:
+       - **SetHealthMax**: Establece el valor máximo de vida del boss al comienzo del combate.
+       - **SetHealth**: Ajusta visualmente la barra de vida en tiempo real según la salud restante del boss.
+       - **TakeDamage**: Reduce la vida del boss cuando recibe daño y actualiza la barra visualmente. Cuando la vida llega a cero, la barra de vida desaparece.
+
+3. ### **Código**:
+El script `BossHealth.cs` incluye los siguientes métodos:
+   1. **SetHealthMax()**: Configura el valor máximo de vida y asegura que la barra de vida esté llena al comienzo.
+   2. **SetHealth()**: Actualiza la barra según la salud restante, ajustando el `fillAmount` y aplicando el gradiente.
+   3. **TakeDamage(float amount)**: Reduce la salud del boss y actualiza la barra. Si la salud llega a cero, se invoca la desaparición de la barra de vida.
+
+4. ### **Comportamiento**:
+   - **Boss**: La barra de vida del boss siempre está visible y se reduce a medida que recibe daño. Cuando la vida llega a cero, la barra desaparece del HUD, y el boss es derrotado.
+   - **Actualización Visual**: La barra muestra un cambio gradual de color a medida que la vida del boss disminuye, brindando al jugador una referencia clara del estado del combate.
+
+Este sistema asegura una experiencia de combate fluida, donde los jugadores pueden monitorear fácilmente la vida del boss y el progreso de la batalla.
