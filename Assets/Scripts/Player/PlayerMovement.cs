@@ -104,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
         //transform.position += (Vector3)(m_Velocity * Time.deltaTime);
         rb.velocity = m_Velocity;
         playerSprite.localPosition = rbSalto.position;
+        KeepPlayerInBounds();
     }
 
     private void FixedUpdate()
@@ -172,6 +173,21 @@ public class PlayerMovement : MonoBehaviour
     {
         //m_CanAttack = true;
         action = Actions.Walking;
+    }
+
+    private void KeepPlayerInBounds()
+    {
+        Vector3 pos = transform.position;
+
+        // Asegurarse de que el jugador no se salga del área de la cámara
+        Vector3 minBounds = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, 0));
+        Vector3 maxBounds = Camera.main.ViewportToWorldPoint(new Vector3(1, 1, 0));
+
+        // Limitar la posición del jugador dentro de los límites de la cámara
+        pos.x = Mathf.Clamp(pos.x, minBounds.x, maxBounds.x);
+        pos.y = Mathf.Clamp(pos.y, minBounds.y, maxBounds.y);
+
+        transform.position = pos;
     }
 
     /*public bool IsGrounded()

@@ -6,14 +6,25 @@ public class EnemyAttack : MonoBehaviour
     private EnemyMovement enemyMovement;
 
     [SerializeField]
-    private float shootDistance = 15f; // Distancia para disparar
+    private float shootDistance = 8f; // Distancia para disparar
     [SerializeField]
     private float chaseDistance = 4f; // Distancia para perseguir
     [SerializeField]
-    private float meleeDistance = 0.5f; // Distancia para ataque cuerpo a cuerpo
+    private float meleeDistance = 1f; // Distancia para ataque cuerpo a cuerpo
     [SerializeField]
     private float projectileSpeed = 0.1f; // Velocidad del proyectil
+    [SerializeField]
+    private float attackCooldown = 2f; // Tiempo de cooldown entre ataques de rango
+    private float lastAttackTime = -Mathf.Infinity; // Registro del último ataque
     private ProjectilePoolManager projectilePoolManager; // Referencia al Pool Manager
+
+    // Daños de los ataques
+    [SerializeField]
+    private float meleeDamage = 1f; // Daño del ataque melee
+    [SerializeField]
+    private float rangeDamageMax = 1.5f; // Daño máximo del ataque de rango (cuando está cerca)
+    [SerializeField]
+    private float rangeDamageMin = 0.5f; // Daño mínimo del ataque de rango (cuando está lejos)
 
     private void Awake()
     {
@@ -41,9 +52,9 @@ public class EnemyAttack : MonoBehaviour
         {
             ChasePlayer();
         }
-        else if (distance <= shootDistance)
+        else if (distance <= shootDistance && Time.time >= lastAttackTime + attackCooldown)
         {
-            PerformRangeAttack(); // Dispara sin cooldown
+            PerformRangeAttack(distance);
         }
     }
 
@@ -51,6 +62,7 @@ public class EnemyAttack : MonoBehaviour
     {
         Debug.Log("Realizando ataque cuerpo a cuerpo");
         enemyMovement.TriggerMeleeAttack();
+        ApplyMeleeDamage();
     }
 
     private void ChasePlayer()
@@ -59,13 +71,29 @@ public class EnemyAttack : MonoBehaviour
         enemyMovement.SetState(EnemyState.Chasing);
     }
 
-    private void PerformRangeAttack()
+    private void PerformRangeAttack(float distance)
     {
         Debug.Log("Disparando proyectil");
-        FireProjectile(); // Dispara directamente sin cooldown
+        enemyMovement.TriggerRangeAttack();
+        FireProjectile(distance);
+        lastAttackTime = Time.time; // Actualiza el tiempo del último ataque
     }
 
-    public void FireProjectile() // Cambiado a public
+    private void ApplyMeleeDamage()
+    {
+        if (enemyMovement.m_Player != null)
+        {
+            // Aplica el daño de melee al jugador
+            PlayerHealth playerHealth = enemyMovement.m_Player.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(meleeDamage);
+                Debug.Log($"El jugador recibió {meleeDamage} de daño por ataque cuerpo a cuerpo.");
+            }
+        }
+    }
+
+    public void FireProjectile(float distance)
     {
         // Asegúrate de que el Pool Manager no sea nulo
         if (projectilePoolManager != null && enemyMovement.m_Player != null)
@@ -74,13 +102,14 @@ public class EnemyAttack : MonoBehaviour
             if (projectile != null)
             {
                 // Establece la posición inicial del proyectil
-                projectile.transform.position = transform.position + new Vector3(0.5f, 1f, 0); 
+                projectile.transform.position = transform.position + new Vector3(0.5f, 1.5f, 0); // Ajustar si es necesario
 
                 // Establece el objetivo del proyectil
                 Shuriken projectileScript = projectile.GetComponent<Shuriken>();
                 if (projectileScript != null)
                 {
                     projectileScript.SetTarget(enemyMovement.m_Player); // Asigna el jugador como objetivo
+                    projectileScript.SetDamage(distance, rangeDamageMax, rangeDamageMin, shootDistance); // Asigna el daño
                 }
 
                 // Establece la rotación inicial del proyectil
@@ -98,6 +127,4 @@ public class EnemyAttack : MonoBehaviour
             Debug.LogWarning("Projectile Pool Manager no encontrado o jugador no asignado.");
         }
     }
-
-
 }

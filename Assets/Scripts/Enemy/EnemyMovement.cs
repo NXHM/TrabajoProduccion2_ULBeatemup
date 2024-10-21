@@ -34,15 +34,16 @@ public class EnemyMovement : MonoBehaviour
     private void Update()
     {
         float distance = GetPlayerDistance();
-        if (distance > 0f)
+        if (distance >= 0f) // Solo si se ha detectado un jugador
         {
             AttackOrChase(distance);
         }
         else
         {
-            m_State = EnemyState.Idle;
+            m_State = EnemyState.Idle; // No se detectó jugador, el enemigo se queda en Idle
         }
 
+        // Cambiar el estado del enemigo según corresponda
         switch (m_State)
         {
             case EnemyState.Idle:
@@ -55,12 +56,16 @@ public class EnemyMovement : MonoBehaviour
                 OnAttackMelee();
                 break;
             case EnemyState.AttackRange:
-                OnAttackRange();
+                OnAttackRange(distance); 
                 break;
         }
+
     }
 
-    private void OnIdle() { }
+    private void OnIdle()
+    {
+        // Comportamiento cuando el enemigo está en estado Idle (por ejemplo, animación o patrullaje)
+    }
 
     private void OnChase()
     {
@@ -75,13 +80,14 @@ public class EnemyMovement : MonoBehaviour
         m_SpriteAnimator.SetTrigger("MeleeAttack");
     }
 
-    private void OnAttackRange()
+    private void OnAttackRange(float distance)
     {
         m_SpriteAnimator.SetTrigger("RangeAttack");
 
-        // Disparar proyectil al atacar a distancia
-        GetComponent<EnemyAttack>()?.FireProjectile();
+        // Disparar proyectil al atacar a distancia, pasando la distancia como argumento
+        GetComponent<EnemyAttack>()?.FireProjectile(distance);
     }
+
 
     private void AttackOrChase(float distance)
     {
@@ -101,6 +107,7 @@ public class EnemyMovement : MonoBehaviour
 
     public float GetPlayerDistance()
     {
+        // Realiza un raycast hacia la izquierda
         var hit = Physics2D.Raycast(
             m_RaycastGenerator.position, Vector2.left,
             m_RaycastDistance, LayerMask.GetMask("Hitbox")
@@ -112,6 +119,7 @@ public class EnemyMovement : MonoBehaviour
             return Vector3.Distance(m_Player.position, transform.position);
         }
 
+        // Si no se encontró a un jugador hacia la izquierda, realiza un raycast hacia la derecha
         hit = Physics2D.Raycast(
             m_RaycastGenerator.position, Vector2.right,
             m_RaycastDistance, LayerMask.GetMask("Hitbox")
@@ -123,8 +131,9 @@ public class EnemyMovement : MonoBehaviour
             return Vector3.Distance(m_Player.position, transform.position);
         }
 
+        // Si no se encuentra ningún jugador, retorna -1
         m_Player = null;
-        return -1;
+        return -1f; // Indica que no se encontró al jugador
     }
 
     public void TriggerMeleeAttack()
