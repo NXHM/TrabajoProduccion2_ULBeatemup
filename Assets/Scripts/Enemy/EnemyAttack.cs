@@ -13,6 +13,9 @@ public class EnemyAttack : MonoBehaviour
     private float meleeDistance = 0.5f; // Distancia para ataque cuerpo a cuerpo
     [SerializeField]
     private float projectileSpeed = 0.1f; // Velocidad del proyectil
+        private int meleeDamage = 10; // DaÃ±o cuerpo a cuerpo
+    [SerializeField]
+    private int rangedDamage = 5; // DaÃ±o de proyectil
     private ProjectilePoolManager projectilePoolManager; // Referencia al Pool Manager
 
     private void Awake()
@@ -51,6 +54,16 @@ public class EnemyAttack : MonoBehaviour
     {
         Debug.Log("Realizando ataque cuerpo a cuerpo");
         enemyMovement.TriggerMeleeAttack();
+        
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, meleeDistance); // Detectar colisiones en rango
+        foreach (var hit in hits)
+        {
+            if (hit.CompareTag("Player"))
+            {
+                // Infligir daÃ±o al jugador
+                hit.GetComponent<PlayerHealth>().TakeDamage(meleeDamage);
+            }
+        }
     }
 
     private void ChasePlayer()
@@ -58,7 +71,7 @@ public class EnemyAttack : MonoBehaviour
         Debug.Log("Persiguiendo al jugador...");
         enemyMovement.SetState(EnemyState.Chasing);
     }
-
+    
     private void PerformRangeAttack()
     {
         Debug.Log("Disparando proyectil");
@@ -67,13 +80,13 @@ public class EnemyAttack : MonoBehaviour
 
     public void FireProjectile() // Cambiado a public
     {
-        // Asegúrate de que el Pool Manager no sea nulo
+        // Asegï¿½rate de que el Pool Manager no sea nulo
         if (projectilePoolManager != null && enemyMovement.m_Player != null)
         {
             GameObject projectile = projectilePoolManager.GetProjectile();
             if (projectile != null)
             {
-                // Establece la posición inicial del proyectil
+                // Establece la posiciï¿½n inicial del proyectil
                 projectile.transform.position = transform.position + new Vector3(0.5f, 1f, 0); // Dispara desde la derecha del enemigo
 
                 // Establece el objetivo del proyectil
@@ -81,9 +94,10 @@ public class EnemyAttack : MonoBehaviour
                 if (projectileScript != null)
                 {
                     projectileScript.SetTarget(enemyMovement.m_Player); // Asigna el jugador como objetivo
+                    projectileScript.SetDamage(rangedDamage);
                 }
 
-                // Establece la rotación inicial del proyectil
+                // Establece la rotaciï¿½n inicial del proyectil
                 projectile.transform.rotation = Quaternion.identity;
 
                 Debug.Log("Proyectil disparado hacia el jugador.");
