@@ -6,6 +6,8 @@ public class PlayerHealth : MonoBehaviour
     private float maxHealth = 1f; // Vida m�xima del jugador
     [SerializeField]
     private float currentHealth;    // Vida actual del jugador
+    [SerializeField]
+    private Transform playerStart;    // Vida actual del jugador
 
      [SerializeField]
     private Transform healthBarFill;
@@ -19,7 +21,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth; // Inicia con la vida m�xima
         originalScale = healthBarFill.localScale;
-        initpos = transform.position;
+        initpos = playerStart.position;
 
         UpdateHealthBar();
     }
@@ -42,7 +44,7 @@ public class PlayerHealth : MonoBehaviour
     // M�todo para manejar la muerte del jugador
     private void Die()
     {
-
+        playerStart.position = initpos;
         Heal(1f);
     }
 
@@ -61,6 +63,13 @@ public class PlayerHealth : MonoBehaviour
 
     private void UpdateHealthBar()
     {  
+
+        const float epsilon = 0.0001f; // Define una pequeña tolerancia para el punto flotante
+
+    if (currentHealth < epsilon)
+    {
+        currentHealth = 0f; // Ajusta la salud a 0 si es muy cercana a 0
+    }
 
     healthBarFill.localScale = new Vector3(originalScale.x * currentHealth , originalScale.y, originalScale.z);
 

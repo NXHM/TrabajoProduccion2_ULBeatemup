@@ -9,6 +9,8 @@ public class EnemyHealth : MonoBehaviour
 
      [SerializeField]
     private Transform healthBarFill;
+    [SerializeField]
+    private GameObject enemy;
     private Vector3 originalScale;
 
     private Vector3 initpos; 
@@ -45,7 +47,7 @@ public class EnemyHealth : MonoBehaviour
     // M�todo para manejar la muerte del jugador
     private void Die()
     {
-        Destroy(gameObject);
+        Destroy(enemy);
     }
 
     // M�todo para curar al jugador
@@ -80,10 +82,6 @@ public class EnemyHealth : MonoBehaviour
     else if (currentHealth > 0.25f)
     {
         renderer.material.color = new Color(1f, 0.65f, 0f); // Anaranjado
-    }
-    else if (currentHealth <= 0f)
-    {
-        // Llama a la función de muerte cuando la salud llega a 0
     }
     else
     {

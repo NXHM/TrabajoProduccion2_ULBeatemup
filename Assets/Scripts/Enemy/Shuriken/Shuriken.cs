@@ -65,7 +65,7 @@ public class Shuriken : MonoBehaviour
             if (playerHealth != null)
             {
                 Debug.Log($"Aplicando {damage} de da�o al jugador");
-                playerHealth.TakeDamage(0.20f); // Aplica el da�o al jugador
+                playerHealth.TakeDamage(0.15f); // Aplica el da�o al jugador
                 Debug.Log($"El jugador recibi� {damage} de da�o por el shuriken.");
             }
             else
