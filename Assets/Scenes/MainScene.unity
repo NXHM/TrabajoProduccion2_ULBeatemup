@@ -242,7 +242,7 @@ Transform:
   m_GameObject: {fileID: 150958859}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 45.507835, y: -1.1919999, z: -10}
+  m_LocalPosition: {x: 45.609295, y: -1.1919999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1383,7 +1383,7 @@ Transform:
   m_GameObject: {fileID: 687388096}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 69.84823, y: -0.5188005, z: -10}
+  m_LocalPosition: {x: 69.911644, y: -0.5188005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3322,7 +3322,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   currentHealth: 0
+  playerStart: {fileID: 98378007}
   healthBarFill: {fileID: 20527683}
+  initpos: {x: 0, y: 0, z: 0}
 --- !u!212 &2065027780
 SpriteRenderer:
   m_ObjectHideFlags: 0
