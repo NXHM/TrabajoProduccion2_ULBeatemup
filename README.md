@@ -16,133 +16,138 @@
   - Cuando el jugador muera, debe reaparecer al inicio del nivel.
 
 ---
+
 # Requerimiento 2: Ataques del Footsoldier
 
 ## Descripción
 
-Permitir que el footsoldier ataque de dos formas diferentes:
+El footsoldier puede atacar de dos formas diferentes:
+
 1. **Melee**: Ataque cuerpo a cuerpo, implementado durante las sesiones de clase.
-2. **Shuriken**: Lanzamiento de proyectiles que también causan daño variable al jugador.
+2. **Shuriken**: Lanzamiento de proyectiles que causan daño variable al jugador.
 
 ## Implementación de Ataques
 
 ### Melee
 
 - **Descripción del Ataque**:  
-  El ataque cuerpo a cuerpo se activa cuando el jugador se encuentra dentro del rango de `meleeDistance`. Este ataque inflige daño directamente al jugador y es esencial para mantener la presión durante el combate.
+  El ataque cuerpo a cuerpo se activa cuando el jugador se encuentra dentro del rango de `meleeDistance`, infligiendo daño directamente y manteniendo la presión durante el combate.
 
 - **Implementación**:
-  1. Se realizó la implementación del ataque melee, para lo cual se animó el ataque del enemigo. La animación correspondiente es **MeleeAttack.anim**.
+  1. Se implementó el ataque melee y se animó el ataque del enemigo usando la animación **MeleeAttack.anim**.
 
      ![Animación de Ataque Melee](https://github.com/user-attachments/assets/1f13cd3a-9b34-4a36-85b2-fe5b1d719fa3)
-  
+
   2. **Código**:
-     - En el script `EnemyAttack.cs`, se implementa el ataque melee a través del siguiente método:
+     - En el script `EnemyAttack.cs`, el ataque melee se implementa a través de los siguientes métodos:
 
        - **Método `PerformMeleeAttack()`**:
-         - Este método se llama cuando el jugador está en rango para un ataque cuerpo a cuerpo.
-         - Activa una animación del enemigo a través del método `TriggerMeleeAttack()` del componente `EnemyMovement`.
-         - Luego, llama a `ApplyMeleeDamage()` para infligir daño al jugador.
+         - Se llama cuando el jugador está en rango.
+         - Activa la animación mediante `TriggerMeleeAttack()` en `EnemyMovement`.
+         - Llama a `ApplyMeleeDamage()` para infligir daño al jugador.
      
        - **Método `ApplyMeleeDamage()`**:
          - Verifica si el jugador está asignado.
          - Obtiene el componente `PlayerHealth` del jugador para aplicar el daño.
-         - Registra el daño infligido en la consola para seguimiento y depuración.
+         - Registra el daño en la consola para seguimiento y depuración.
 
     - **Variables Relacionadas**:
-       - `meleeDamage`: Determina la cantidad de daño infligido por el ataque cuerpo a cuerpo.
-       - `meleeDistance`: Establece el rango dentro del cual el ataque cuerpo a cuerpo puede ser realizado.
+       - `meleeDamage`: Cantidad de daño infligido por el ataque cuerpo a cuerpo.
+       - `meleeDistance`: Rango dentro del cual se puede realizar el ataque.
 
   3. **Comportamiento**:  
-     Cuando el jugador entra en el rango de ataque, el enemigo debe:
+     Al entrar en el rango de ataque, el enemigo debe:
        - Ejecutar la animación del ataque cuerpo a cuerpo.
-       - Infligir el daño correspondiente al jugador.
-       - Reflejar este cambio en la barra de vida del jugador si recibe daño.
+       - Infligir daño al jugador.
+       - Reflejar el cambio en la barra de vida del jugador si recibe daño.
 
 ---
 
 ### Implementación de Shuriken
 
 - **Descripción del Ataque**:  
-  El footsoldier puede lanzar shurikens como ataque a distancia. Este ataque se activa cuando el jugador está a una distancia adecuada.
+  El footsoldier puede lanzar shurikens a distancia, activándose cuando el jugador está a una distancia adecuada.
 
 - **Características**:
-  - El daño infligido por el ataque de proyectil también debe ser variable.
-  - Se implementará una lógica en el script para gestionar el lanzamiento y la trayectoria del proyectil.
+  - El daño del ataque proyectil es variable.
+  - Se implementará una lógica en el script para gestionar el lanzamiento y trayectoria del proyectil.
 
 - **Implementación**:
 
-  1. **Código**:
-     - La clase **`Shuriken`** gestiona el comportamiento del proyectil lanzado por el footsoldier. El shuriken se mueve hacia el objetivo y causa daño al jugador al colisionar con él. (Ubicación: `Assets/Scripts/Enemy/Shuriken/Shuriken.cs`)
+  1. **Animación de Ataque a Distancia**:  
+     ![Animación de Ataque a Distancia](https://github.com/user-attachments/assets/96f1e619-f9a1-42bd-8d01-960d0a176c0f)
+
+  2. **Código**:
+     
+     2.1 **Clase `Shuriken`**:
+     - Gestiona el comportamiento del proyectil lanzado. Se mueve hacia el objetivo y causa daño al jugador al colisionar. (Ubicación: `Assets/Scripts/Enemy/Shuriken/Shuriken.cs`)
 
      - **Variables**:
-       - **`speed`**: Velocidad del proyectil. Se ajusta en el inspector de Unity.
-       - **`maxLifetime`**: Tiempo máximo de vida del proyectil antes de ser reciclado.
-       - **`target`**: Referencia al objeto objetivo (normalmente el jugador).
+       - **`speed`**: Velocidad del proyectil (ajustable en el inspector de Unity).
+       - **`maxLifetime`**: Tiempo máximo de vida del proyectil.
+       - **`target`**: Referencia al jugador.
        - **`lifetime`**: Tiempo de vida restante del proyectil.
-       - **`damage`**: Daño que el proyectil infligirá al jugador.
+       - **`damage`**: Daño infligido al jugador.
 
      - **Métodos Clave**:
        - **`OnEnable()`**: 
-         - Resetea el tiempo de vida del proyectil (`lifetime`) al valor de `maxLifetime` cuando se activa.
+         - Resetea el `lifetime` al `maxLifetime` cuando se activa.
 
        - **`Update()`**: 
-         - Mueve el proyectil hacia el objetivo si hay uno asignado.
-         - Reduce el tiempo de vida del proyectil. Si excede `maxLifetime`, el proyectil se devuelve al pool.
+         - Mueve el proyectil hacia el objetivo si está asignado.
+         - Reduce el tiempo de vida. Si excede `maxLifetime`, se devuelve al pool.
 
        - **`SetTarget(Transform newTarget)`**: 
-         - Asigna un nuevo objetivo al proyectil, permitiendo que se dirija al jugador.
+         - Asigna un nuevo objetivo al proyectil.
 
        - **`SetDamage(float distance, float maxDamage, float minDamage, float maxDistance)`**: 
-         - Calcula el daño basado en la distancia entre el enemigo y el jugador utilizando interpolación lineal (`Mathf.Lerp`).
+         - Calcula el daño basado en la distancia usando interpolación lineal (`Mathf.Lerp`).
 
        - **`MoveTowardsTarget()`**: 
-         - Calcula la dirección hacia el objetivo y mueve el proyectil usando el componente `Rigidbody2D`.
+         - Calcula la dirección hacia el objetivo y mueve el proyectil usando `Rigidbody2D`.
 
        - **`OnTriggerEnter2D(Collider2D collision)`**: 
-         - Detecta la colisión del proyectil con otros objetos.
-         - Si colisiona con el jugador, aplica daño usando el componente `PlayerHealth` y devuelve el proyectil al pool.
+         - Detecta colisiones. Si colisiona con el jugador, aplica daño y devuelve el proyectil al pool.
 
        - **`ReturnToPool()`**: 
          - Desactiva el proyectil y lo devuelve al `ProjectilePoolManager`.
 
-  2. **Clase `ProjectilePoolManager`**:
-     - Esta clase gestiona un pool de proyectiles para optimizar la creación y reutilización de objetos, evitando la sobrecarga de memoria y mejorando el rendimiento. (Ubicación: `Assets/Scripts/Enemy/ProjectilePoolManager.cs`)
+  2.2. **Clase `ProjectilePoolManager`**:
+     - Gestiona un pool de proyectiles para optimizar la creación y reutilización de objetos. (Ubicación: `Assets/Scripts/Enemy/ProjectilePoolManager.cs`)
 
-  3. **En la clase `EnemyAttack` se muestran los siguientes cambios relacionados con el ataque a distancia**:
+  2.3. **Cambios en la clase `EnemyAttack`**:
 
      - **`HandleAttack(float distance)`**:
        - **Descripción**: Gestiona la lógica de ataque del enemigo según la distancia al jugador.
-       - **Condiciones de Ataque a Distancia**: Si la distancia al jugador es menor o igual a `shootDistance` y el tiempo actual supera el tiempo del último ataque más el cooldown, se ejecuta el ataque a distancia.
+       - **Condiciones de Ataque a Distancia**: Se ejecuta el ataque si la distancia es menor o igual a `shootDistance` y el tiempo actual supera el último ataque más el cooldown.
 
      - **`PerformRangeAttack(float distance)`**:
-       - **Descripción**: Este método se encarga de ejecutar un ataque a distancia.
+       - **Descripción**: Ejecuta un ataque a distancia.
        - **Funcionalidad**:
-         - Imprime un mensaje en la consola indicando que se está disparando un proyectil.
-         - Llama al método `FireProjectile(distance)` para lanzar un proyectil hacia el jugador.
-         - Actualiza `lastAttackTime` al tiempo actual para iniciar el cooldown del próximo ataque.
+         - Imprime un mensaje en la consola sobre el ataque.
+         - Llama a `FireProjectile(distance)` para lanzar un proyectil.
+         - Actualiza `lastAttackTime` para iniciar el cooldown.
 
      - **`FireProjectile(float distance)`**:
-       - **Descripción**: Gestiona la creación y el lanzamiento de un proyectil.
+       - **Descripción**: Gestiona la creación y lanzamiento de un proyectil.
        - **Funcionalidad**:
-         - Comprueba si el `projectilePoolManager` y el jugador están disponibles.
+         - Verifica la disponibilidad de `projectilePoolManager` y el jugador.
          - Intenta obtener un proyectil del pool. Si se obtiene, se configura:
-           - **Posición**: Se establece la posición inicial del proyectil en relación con el enemigo.
-           - **Objetivo**: Se asigna el jugador como objetivo utilizando el método `SetTarget` del script `Shuriken`.
-           - **Daño**: Se calcula y asigna el daño utilizando `SetDamage`, tomando en cuenta la distancia actual entre el enemigo y el jugador.
+           - **Posición**: Se establece la posición inicial del proyectil.
+           - **Objetivo**: Se asigna el jugador utilizando `SetTarget`.
+           - **Daño**: Se calcula y asigna usando `SetDamage`.
 
-  4. **Comportamiento**:
+  3. **Comportamiento**:
     - **Activación del Ataque**: 
-       - Cuando el jugador se encuentra dentro de `shootDistance` y el cooldown ha expirado, el enemigo realiza un ataque a distancia.
+       - El enemigo realiza un ataque a distancia cuando el jugador está dentro de `shootDistance` y el cooldown ha expirado.
 
     - **Disparo del Proyectil**:
-       - Se obtiene un proyectil del pool y se posiciona adecuadamente.
-       - Se asigna el jugador como objetivo del proyectil.
-       - Se calcula el daño del proyectil en función de la distancia al jugador.
-       - Se activa el proyectil, que comienza a moverse hacia el jugador.
+       - Se obtiene un proyectil del pool, se posiciona y se asigna el jugador como objetivo.
+       - Se calcula y activa el proyectil para que se mueva hacia el jugador.
 
     - **Gestión del Cooldown**:
-       - Una vez que se ha realizado el ataque, el tiempo del último ataque se actualiza, evitando que el enemigo dispare nuevamente hasta que transcurra el cooldown.
+       - Actualiza el tiempo del último ataque para evitar que el enemigo dispare nuevamente hasta que transcurra el cooldown.
+
 
 ---
 
