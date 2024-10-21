@@ -6,7 +6,7 @@ using Cinemachine;
 public class BossCamera : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCamera virtualCamera;
-    
+
     void Start()
     {
         virtualCamera.Follow = null;

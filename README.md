@@ -193,10 +193,6 @@ Clase que gestiona la aparición de enemigos en el juego. Permite definir el int
 - **`IsPositionValid(Vector2 position)`**: Verifica si una posición es válida para generar un enemigo.
 - **`EnemyDied()`**: Registra la muerte de un enemigo y actualiza el contador correspondiente.
 
-
-
----
-
 ## Requerimiento 3: Implementación del Boss
 
 - **Descripción**: Introducir un boss con dos formas de ataque, cada una con daño variable al jugador.
@@ -308,3 +304,33 @@ El script `Boss.cs` incluye el comportamiento del boss
 
 ### EnemyHitbox del Boss
 Detecta si el Boss fue golpeado por el Player, y llama al script `Boss.cs` para que sufra daño
+
+### Fijación de Cámara:
+1. **Descripción**:  
+Esta mecánica permite congelar la cámara en una posición fija, limitando el área visible para el jugador durante secciones específicas del juego. El objetivo es ofrecer una perspectiva estática, ideal para momentos clave del combate o eventos importantes. La cámara deja de seguir al jugador, brindando un enfoque controlado de la escena en curso.
+
+2. **Implementación**:  
+Para congelar la cámara, se emplea una `CinemachineVirtualCamera`, la cual deja de seguir al jugador cuando se activa esta mecánica. La cámara se posiciona en una ubicación específica para crear una vista fija del entorno. Además, se utiliza un `PolygonCollider 2D` que delimita el área en la que la cámara permanece inmóvil, estableciendo los límites visuales para el jugador dentro de esa zona.
+
+   - **Detalles Técnicos**:
+     - **Congelación de la Cámara**:
+       - **CinemachineVirtualCamera**: Se desactiva el seguimiento del jugador al ajustar la propiedad `Follow` de la cámara virtual a `null`, lo que fija su posición y evita que se mueva durante el gameplay.
+       - **Posición Fija**: La cámara se coloca en una coordenada específica, estableciendo una perspectiva visual predeterminada para el jugador. Esto permite controlar lo que el jugador ve y lo que queda fuera del área visible.
+
+     - **Delimitación del Área**:
+       - **PolygonCollider 2D**: Se emplea un `PolygonCollider 2D` para definir los límites de la zona en la que la cámara se congela, asegurando que el jugador no salga del área visual restringida durante esta sección.
+
+     - **Componentes Principales**:
+       - **CinemachineVirtualCamera**: Controla la cámara, que se congela al desactivar el seguimiento del jugador.
+       - **PolygonCollider 2D**: Define el área fija donde la cámara permanece inmóvil.
+
+3. ### **Código**:
+El script `BossCamera.cs` incluye los siguientes métodos:
+   1. **Start()**: Al inicio de la escena o combate, la cámara deja de seguir al jugador al ajustar la propiedad `Follow` a `null`, y se coloca en una posición fija sobre el eje `y` para mantener la perspectiva deseada.
+   2. **SetCameraPosition(Vector3 position)**: Establece la posición fija de la cámara según las coordenadas definidas, ofreciendo una vista estática del entorno.
+
+4. ### **Comportamiento**:
+   - **Cámara Congelada**: Una vez activada la mecánica, la cámara se fija en una posición específica, manteniendo una vista estática del área de combate o evento. El jugador no podrá mover la cámara ni salir del área visualmente delimitada.
+   - **Área Delimitada**: El `PolygonCollider 2D` asegura que el jugador no salga del área visible mientras la cámara permanece congelada, garantizando que la acción se mantenga dentro de los límites establecidos.
+
+Esta mecánica añade control visual sobre el entorno, permitiendo a los desarrolladores destacar momentos clave del combate o del juego mediante una vista estática cuidadosamente diseñada.
