@@ -44,6 +44,7 @@ public class Boss : MonoBehaviour
         {
             m_PlayableDirector.Play();
             transform.parent.gameObject.SetActive(false);
+            Application.Quit();
         }
     }
 

@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 235276609}
   - component: {fileID: 235276608}
   m_Layer: 0
-  m_Name: Bounds Boss
+  m_Name: Bounds (Boss)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1281,6 +1281,8 @@ GameObject:
   - component: {fileID: 687388097}
   - component: {fileID: 687388099}
   - component: {fileID: 687388098}
+  - component: {fileID: 687388101}
+  - component: {fileID: 687388100}
   m_Layer: 0
   m_Name: Boss Camera
   m_TagString: Untagged
@@ -1365,6 +1367,36 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 488004056}
+--- !u!114 &687388100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687388096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf5ba47c97524b4184a3e9ce027c224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virtualCamera: {fileID: 687388099}
+--- !u!114 &687388101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687388096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConfineMode: 0
+  m_BoundingVolume: {fileID: 0}
+  m_BoundingShape2D: {fileID: 235276608}
+  m_ConfineScreenEdges: 1
+  m_Damping: 0
 --- !u!1 &714716870
 GameObject:
   m_ObjectHideFlags: 0
