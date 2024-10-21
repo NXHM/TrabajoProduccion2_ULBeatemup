@@ -10,6 +10,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Awake()
     {
+
         m_BeatemupControls = new BeatemupControls();
         m_PlayerMovement = GetComponent<PlayerMovement>();
         m_PlayerHealth = GetComponent<PlayerHealth>(); // Referencia al script PlayerHealth
