@@ -268,3 +268,43 @@ El script `BossHealth.cs` incluye los siguientes métodos:
    - **Actualización Visual**: La barra muestra un cambio gradual de color a medida que la vida del boss disminuye, brindando al jugador una referencia clara del estado del combate.
 
 Este sistema asegura una experiencia de combate fluida, donde los jugadores pueden monitorear fácilmente la vida del boss y el progreso de la batalla.
+
+### Comportamiento del Boss
+El script `Boss.cs` incluye el comportamiento del boss
+
+1.- **Variables Privadas**
+
+- **`tiempoEspera`**: Frecuencia mínima y máxima en la que el Boss se queda quieto.
+- **`velSalto`**: Qué tan rápido el Boss salta y cae.
+- **`tiempoAire`**: Cuánto tiempo el Boss pasa en el aire antes de caer al piso
+- **`piso`**: Apunta al Transform del piso del Boss
+- **`bossSprite`**: Apunta al Transform del sprite del Boss
+- **`anim`**: Apunta al Animator del sprite del Boss
+- **`col`**: Apunta al hitbox del Boss
+- **`colDamage`**: Apunta al collider donde el Boss golpea al Jugador
+- **`esperaSalto`**: Booleano para que el script sepa si el Boss ya puede saltar
+- **`m_PlayableDirector`**: Apunta al PlayableDirector del Boss
+
+2.- **Propiedades Públicas**
+
+- **`maxHealth`**: Vida máxima.
+- **`currentHealth`**: Vida actual.
+- **`healthBar`**: Apunta al script Healthbar del Boss
+
+3.- **Métodos Principales**
+
+- **`OnValidate()`**: Previene el ingreso de parámetros incorrectos desde el editor
+- **`Start()`**: Asigna la vida máxima y llama a la corrutina `Behaviour`
+- **`TakeDamage()`**: Hace que el Boss sufra daño, y si se le acaba, muere
+- **`EsperaSalto()`**: Llamada desde el Animator, para avisar que el Boss ya está parado y puede comenzar a saltar
+
+4.- **Corrutinas**
+
+- **`Behaviour()`**: Se encarga de esperar y tras cierto tiempo, llamar a los ataques. El Boss tiene un animación en bucle Idle
+- **`Attack1()`**: El Boss se para y comienza a saltar sobre el escenario, pudiendo golpear al jugador con su aterrizaje. Tras algunos saltos, vuelve a quedarse inmóvil y regresa a `Behaviour()`
+- **`Jump()`**: Se encarga de que el Boss salte
+- **`Fall()`**: Se encarga de que el Boss caiga al piso
+- **`Land()`**: Se encarga de que el Boss caiga al piso una última vez
+
+### EnemyHitbox del Boss
+Detecta si el Boss fue golpeado por el Player, y llama al script `Boss.cs` para que sufra daño
