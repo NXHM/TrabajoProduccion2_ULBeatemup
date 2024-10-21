@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,11 +6,14 @@ public class PlayerInput : MonoBehaviour
     private PlayerMovement m_PlayerMovement;
     private BeatemupControls m_BeatemupControls;
     private InputAction m_MoveInputAction;
+    private PlayerHealth m_PlayerHealth;
 
-    private void Awake() 
+    private void Awake()
     {
+
         m_BeatemupControls = new BeatemupControls();
         m_PlayerMovement = GetComponent<PlayerMovement>();
+        m_PlayerHealth = GetComponent<PlayerHealth>(); // Referencia al script PlayerHealth
     }
 
     private void OnEnable()
@@ -28,7 +28,6 @@ public class PlayerInput : MonoBehaviour
         m_MoveInputAction.Enable();
     }
 
-
     private void OnDisable()
     {
         m_BeatemupControls.Player.Jump.performed -= DoJump;
@@ -40,11 +39,9 @@ public class PlayerInput : MonoBehaviour
         m_MoveInputAction.Disable();
     }
 
-
-    private void Update() 
+    private void Update()
     {
         var movVector = m_MoveInputAction.ReadValue<Vector2>();
-
         m_PlayerMovement.Move(movVector.x, movVector.y);
     }
 
@@ -52,6 +49,7 @@ public class PlayerInput : MonoBehaviour
     {
         m_PlayerMovement.Jump();
     }
+
     private void DoAttack1(InputAction.CallbackContext context)
     {
         m_PlayerMovement.Attack1();

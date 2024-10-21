@@ -18,7 +18,7 @@ TagManager:
   - Cutscenes
   - Hitbox
   - SaltoAux
-  - 
+  - Proyectiles
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: Platform
     uniqueID: 1661163379
+    locked: 0
+  - name: Proyectiles
+    uniqueID: 2988340473
     locked: 0
   - name: Characters
     uniqueID: 2615848149
