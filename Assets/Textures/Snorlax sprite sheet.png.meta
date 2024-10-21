@@ -1,0 +1,1082 @@
+fileFormatVersion: 2
+guid: 988bda6a8b805874c84e5fa10a6004f6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 13
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 455
+        width: 65
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af18c1ca52eb464c81bfc0515cce56d
+      internalID: -2131567098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 456
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1bd02354de12e44f9ee426859e136a7
+      internalID: 970025230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 456
+        width: 69
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e404a8b67951a6f4e92e8660d448c553
+      internalID: -1652058726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 457
+        width: 70
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65a68ac2121b0545a72829d5026b667
+      internalID: 335919704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 454
+        width: 63
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb92bcf290b284448e2c422e8b1a6aa
+      internalID: 1134557569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 454
+        width: 62
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dcd3e3c58b35014088f90ed52d7cfa7
+      internalID: -1284840623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 382
+        width: 65
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe43691e96dae9458a146803aa2a942
+      internalID: 1682683429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 67
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fd73e080e88e54daf05c9fede5c2e6
+      internalID: 212239155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 310
+        width: 75
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0d66a3565c49d42b1a12fd9b70b934
+      internalID: 1692728890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 310
+        width: 75
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c66d3a7532de24ab4bcb24012ac90e
+      internalID: 32449170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 310
+        width: 75
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9df7871dc111d846a2adb1060b3a008
+      internalID: 727609271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 310
+        width: 65
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34391abbe07869744999f7fb8f4ba102
+      internalID: -1972763979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 310
+        width: 67
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3040d715c5c1274f875904aab46aef3
+      internalID: 144217416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 310
+        width: 69
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16836c85147e8b4ea5ae95cb2450d36
+      internalID: -439392949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 238
+        width: 65
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ccf33cdcce50d42993c3365e825255
+      internalID: 1339138728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 238
+        width: 65
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fcac97818da2e4fbd687f7724036f2
+      internalID: 597605255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 234
+        width: 54
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7282a8dcb0a5040bbe7842b985b281
+      internalID: 1952218986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 234
+        width: 55
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcee2ff2a8113a443bf2c6b5e1a14f68
+      internalID: -774068972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 234
+        width: 59
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8e1d3d988985f4795691b0f08b21a5
+      internalID: -859399023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 157
+        width: 60
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c94050f2f8f65a4a9a1bf8f64ae631a
+      internalID: 86585238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 163
+        width: 74
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad32849380ded94a99402bdaa2d8222
+      internalID: -1923584159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 160
+        width: 71
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b27a7c6776ae747af1ebc9ef11a388
+      internalID: -1014337528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 160
+        width: 62
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7842548fb3d8faf4c9372ff10024891e
+      internalID: 105980236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_23
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 160
+        width: 76
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d1fe3678977564ab0a8f2c2bf5f29a
+      internalID: -1746185380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 166
+        width: 83
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97fff76258793b4185ca6e0a8226cf8
+      internalID: 133473803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_25
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 163
+        width: 76
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffdb1575911c324488df87b9b062fd3e
+      internalID: -511646487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_26
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 157
+        width: 60
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2547cd428c7954d81d68b790848b9f
+      internalID: 1142235476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 59
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd741882fd88c784abad09787d14dcc9
+      internalID: -538006818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_28
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 81
+        width: 62
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfaf2f54d01dba4287c1a1b5485ba5e
+      internalID: 959678719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_29
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 81
+        width: 58
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46a1bba39bc3334f8e2c80d73967dfc
+      internalID: 896335713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_30
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 81
+        width: 64
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf56426b86b5ba842be8ac93dcdf44db
+      internalID: 1829348707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_31
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 81
+        width: 69
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2497562997b8cdc428eebd75c71d3e75
+      internalID: 454195453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_32
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 82
+        width: 80
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc219aaed10716e4fb306ed4bc8689d9
+      internalID: -1473567058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_33
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 80
+        width: 65
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53c8031a0829394ba83ebcd88a64074
+      internalID: 553296137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 53
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d379f0ea2d60b754ea7b2a919ca4c5d4
+      internalID: -57567708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_35
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 54
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870363c5d0070c74e927e5eeac7e0d92
+      internalID: 1635725449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_36
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 0
+        width: 55
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1986d19e2293d2b41ad1d62f7d9ca1de
+      internalID: 104595325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_37
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 75
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454cda97b07b2274bacf837eecf04e3b
+      internalID: -624839994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_38
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 5
+        width: 75
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22dc5d0cbe383144cbcd9f4df9b2b042
+      internalID: -155144782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_39
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 3
+        width: 75
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3dc9c9d80038db4595c0919f1976a36
+      internalID: -449421980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_40
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 6
+        width: 61
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7daa8021eda306440a8a157beb4128a6
+      internalID: -1418759197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_41
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 3
+        width: 65
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7a7fcb95b94c643a028472fa9f15bd
+      internalID: 734615969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_42
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 3
+        width: 67
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df34688c0fd1494f8f08d191e35202c
+      internalID: 1380400270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snorlax sprite sheet_43
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 3
+        width: 69
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c67bc56d2fb5b4e9941db254b0fb00
+      internalID: 1698585812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Snorlax sprite sheet_0: -2131567098
+      Snorlax sprite sheet_1: 970025230
+      Snorlax sprite sheet_10: 727609271
+      Snorlax sprite sheet_11: -1972763979
+      Snorlax sprite sheet_12: 144217416
+      Snorlax sprite sheet_13: -439392949
+      Snorlax sprite sheet_14: 1339138728
+      Snorlax sprite sheet_15: 597605255
+      Snorlax sprite sheet_16: 1952218986
+      Snorlax sprite sheet_17: -774068972
+      Snorlax sprite sheet_18: -859399023
+      Snorlax sprite sheet_19: 86585238
+      Snorlax sprite sheet_2: -1652058726
+      Snorlax sprite sheet_20: -1923584159
+      Snorlax sprite sheet_21: -1014337528
+      Snorlax sprite sheet_22: 105980236
+      Snorlax sprite sheet_23: -1746185380
+      Snorlax sprite sheet_24: 133473803
+      Snorlax sprite sheet_25: -511646487
+      Snorlax sprite sheet_26: 1142235476
+      Snorlax sprite sheet_27: -538006818
+      Snorlax sprite sheet_28: 959678719
+      Snorlax sprite sheet_29: 896335713
+      Snorlax sprite sheet_3: 335919704
+      Snorlax sprite sheet_30: 1829348707
+      Snorlax sprite sheet_31: 454195453
+      Snorlax sprite sheet_32: -1473567058
+      Snorlax sprite sheet_33: 553296137
+      Snorlax sprite sheet_34: -57567708
+      Snorlax sprite sheet_35: 1635725449
+      Snorlax sprite sheet_36: 104595325
+      Snorlax sprite sheet_37: -624839994
+      Snorlax sprite sheet_38: -155144782
+      Snorlax sprite sheet_39: -449421980
+      Snorlax sprite sheet_4: 1134557569
+      Snorlax sprite sheet_40: -1418759197
+      Snorlax sprite sheet_41: 734615969
+      Snorlax sprite sheet_42: 1380400270
+      Snorlax sprite sheet_43: 1698585812
+      Snorlax sprite sheet_5: -1284840623
+      Snorlax sprite sheet_6: 1682683429
+      Snorlax sprite sheet_7: 212239155
+      Snorlax sprite sheet_8: 1692728890
+      Snorlax sprite sheet_9: 32449170
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
