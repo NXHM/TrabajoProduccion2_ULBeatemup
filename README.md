@@ -25,6 +25,7 @@ El footsoldier puede atacar de dos formas diferentes:
 
 1. **Melee**: Ataque cuerpo a cuerpo, implementado durante las sesiones de clase.
 2. **Shuriken**: Lanzamiento de proyectiles que causan daño variable al jugador.
+3. **Spawner**: Para manejar que salgan enemigos cuando uno se de rotado
 
 ## Implementación de Ataques
 
@@ -147,6 +148,34 @@ El footsoldier puede atacar de dos formas diferentes:
 
     - **Gestión del Cooldown**:
        - Actualiza el tiempo del último ataque para evitar que el enemigo dispare nuevamente hasta que transcurra el cooldown.
+
+---
+
+### Documentación del EnemySpawner
+
+#### Clase `EnemySpawner`
+
+Clase que gestiona la aparición de enemigos en el juego. Permite definir el intervalo de generación, la posición y la cantidad máxima de enemigos activos.
+
+1.- **Variables Privadas**
+
+- **`enemiesSpawned`**: Contador de enemigos generados.
+- **`enemiesDead`**: Contador de enemigos eliminados.
+
+2.- **Propiedades Públicas**
+
+- **`EnemiesSpawned`**: Número de enemigos generados.
+- **`EnemiesDead`**: Número de enemigos eliminados.
+
+3.- **Métodos Principales**
+
+- **`Start()`**: Inicializa la generación de enemigos.
+- **`SpawnEnemies()`**: Coroutine que genera enemigos en intervalos específicos.
+- **`GetValidSpawnPosition()`**: Busca una posición válida para la generación de un enemigo.
+- **`GetRandomPointInCameraView()`**: Genera un punto aleatorio en la vista de la cámara.
+- **`IsPositionValid(Vector2 position)`**: Verifica si una posición es válida para generar un enemigo.
+- **`EnemyDied()`**: Registra la muerte de un enemigo y actualiza el contador correspondiente.
+
 
 
 ---
