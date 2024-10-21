@@ -8,7 +8,8 @@ public class EnemyHitbox : MonoBehaviour
     [SerializeField]
     private Animator m_EnemyAnimator;
     [SerializeField] private bool isBoss;
-    
+
+    [SerializeField] Boss boss;
 
     public void Hit()
     {
@@ -22,6 +23,7 @@ public class EnemyHitbox : MonoBehaviour
         else
         {
             Debug.Log("SnorlaxHit");
+            boss.TakeDamage(10);
         }
     }
 }

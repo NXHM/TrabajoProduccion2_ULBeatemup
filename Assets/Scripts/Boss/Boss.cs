@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Playables;
 
 public class Boss : MonoBehaviour
 {
@@ -13,6 +14,14 @@ public class Boss : MonoBehaviour
     private bool esperaSalto;
     //[SerializeField] private Rigidbody2D rbSalto;
 
+    public int maxHealth = 10;
+    public int currentHealth;
+
+    public HealthBar healthBar;
+
+    [SerializeField]
+    private PlayableDirector m_PlayableDirector;
+
     void OnValidate()
     {
         tiempoEspera.y = Mathf.Max(tiempoEspera.x, tiempoEspera.y);
@@ -20,8 +29,22 @@ public class Boss : MonoBehaviour
 
     void Start()
     {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
         colDamage.enabled = false;
         StartCoroutine(Behaviour());
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+
+        if(currentHealth <= 0)
+        {
+            m_PlayableDirector.Play();
+            transform.parent.gameObject.SetActive(false);
+        }
     }
 
     private IEnumerator Behaviour()
