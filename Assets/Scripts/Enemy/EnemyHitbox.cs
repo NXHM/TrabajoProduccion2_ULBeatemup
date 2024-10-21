@@ -7,13 +7,21 @@ public class EnemyHitbox : MonoBehaviour
 {
     [SerializeField]
     private Animator m_EnemyAnimator;
+    [SerializeField] private bool isBoss;
     
 
     public void Hit()
     {
-        var light = m_EnemyAnimator.
-            gameObject.transform.Find("Light");;
-        light.gameObject.SetActive(true);
-        m_EnemyAnimator.SetTrigger("ReceiveAttack");
+        if (!isBoss)
+        {
+            var light = m_EnemyAnimator.
+                gameObject.transform.Find("Light");
+            light.gameObject.SetActive(true);
+            m_EnemyAnimator.SetTrigger("ReceiveAttack");
+        }
+        else
+        {
+            Debug.Log("SnorlaxHit");
+        }
     }
 }
