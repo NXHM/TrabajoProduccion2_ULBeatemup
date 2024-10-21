@@ -12,6 +12,11 @@ public class Boss : MonoBehaviour
     private bool esperaSalto;
     //[SerializeField] private Rigidbody2D rbSalto;
 
+    public int maxHealth = 100;
+    public int currentHealth;
+
+    public HealthBar healthBar;
+
     void OnValidate()
     {
         tiempoEspera.y = Mathf.Max(tiempoEspera.x, tiempoEspera.y);
@@ -19,13 +24,23 @@ public class Boss : MonoBehaviour
 
     void Start()
     {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
         StartCoroutine(Behaviour());
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(20);
+        }
+    }
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
     }
 
     private IEnumerator Behaviour()
