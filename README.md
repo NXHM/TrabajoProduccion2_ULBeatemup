@@ -109,6 +109,45 @@ Permitir que el footsoldier ataque de dos formas diferentes:
     
    La clase `ProjectilePoolManager` gestiona un pool de proyectiles para optimizar la creación y reutilización de objetos, evitando la sobrecarga de memoria y mejorando el rendimiento. (Assets/Scripts/Enemy/ProjectilePoolManager.cs)
 
+   En la clase `EnemyAttack` se muestran los siguientes cambios respectivos de este ataque:
+  
+     - **`HandleAttack(float distance)`**
+        - **Descripción**: Este método gestiona la lógica de ataque del enemigo según la distancia al jugador.
+        - **Condiciones de Ataque a Distancia**:
+            - Si la distancia al jugador es menor o igual a `shootDistance` y el tiempo actual supera el tiempo del último ataque más el cooldown, se ejecuta el ataque a distancia.
+
+     - **`PerformRangeAttack(float distance)`**
+        - **Descripción**: Este método se encarga de ejecutar un ataque a distancia.
+        - **Funcionalidad**:
+          - Imprime un mensaje en la consola indicando que se está disparando un proyectil.
+          - Llama al método `FireProjectile(distance)` para lanzar un proyectil hacia el jugador.
+          - Actualiza `lastAttackTime` al tiempo actual para iniciar el cooldown del próximo ataque.
+
+     - **`FireProjectile(float distance)`**
+        - **Descripción**: Este método gestiona la creación y el lanzamiento de un proyectil.
+        - **Funcionalidad**:
+          - Comprueba si el `projectilePoolManager` y el jugador están disponibles.
+          - Intenta obtener un proyectil del pool. Si se obtiene, se configura:
+            - **Posición**: Se establece la posición inicial del proyectil en relación con el enemigo.
+            - **Objetivo**: Se asigna el jugador como objetivo utilizando el método `SetTarget` del script `Shuriken`.
+            - **Daño**: Se calcula y asigna el daño utilizando `SetDamage`, que toma en cuenta la distancia actual entre el enemigo y el jugador.
+
+
+   3. **Comportamiento**:
+    - **Activación del Ataque**: 
+       - Cuando el jugador se encuentra dentro de `shootDistance` y el cooldown ha expirado, el enemigo realiza un ataque a distancia.
+
+    - **Disparo del Proyectil**:
+       - Se obtiene un proyectil del pool y se posiciona adecuadamente.
+       - Se asigna el jugador como objetivo del proyectil.
+       - Se calcula el daño del proyectil en función de la distancia al jugador.
+       - Se activa el proyectil, que comienza a moverse hacia el jugador.
+
+    - **Gestión del Cooldown**:
+       - Una vez que se ha realizado el ataque, el tiempo del último ataque se actualiza, evitando que el enemigo dispare nuevamente hasta que transcurra el cooldown.
+
+         
+
 ---
 
 ## Requerimiento 3: Implementación del Boss
