@@ -23,7 +23,7 @@
 
 Permitir que el footsoldier ataque de dos formas diferentes:
 1. **Melee**: Ataque cuerpo a cuerpo, implementado durante las sesiones de clase.
-2. **Shuriken/Kunai**: Lanzamiento de proyectiles que también causan daño variable al jugador.
+2. **Shuriken**: Lanzamiento de proyectiles que también causan daño variable al jugador.
 
 ## Implementación de Ataques
 
@@ -62,7 +62,7 @@ Permitir que el footsoldier ataque de dos formas diferentes:
        - Infligir el daño correspondiente al jugador.
        - En caso de que el jugador reciba daño, el sistema debe reflejar este cambio en su barra de vida.
 
-### Implementación de Shuriken/Kunai
+### Implementación de Shuriken
 
 - **Descripción del Ataque**:  
   El footsoldier puede lanzar shurikens o kunais como ataque a distancia. Este ataque se activa cuando el jugador está a una distancia adecuada.
@@ -71,6 +71,43 @@ Permitir que el footsoldier ataque de dos formas diferentes:
   - El daño infligido por el ataque de proyectil también debe ser variable.
   - Implementar una lógica en el script para gestionar el lanzamiento y la trayectoria del proyectil.
 
+- **Implementación**:
+  
+  2. **Código**:
+  - La clase **`Shuriken`** gestiona el comportamiento del proyectil lanzado por el footsoldier. El shuriken se mueve hacia el objetivo y causa daño al jugador al colisionar con él. (Assets/Scripts/Enemy/Shuriken/Shuriken.cs)
+  - Variables:
+    - **`speed`**: Velocidad del proyectil. Se ajusta en el inspector de Unity.
+    - **`maxLifetime`**: Tiempo máximo de vida del proyectil antes de ser reciclado.
+    - **`target`**: Referencia al objeto objetivo (normalmente el jugador).
+    - **`lifetime`**: Tiempo de vida restante del proyectil.
+    - **`damage`**: Daño que el proyectil infligirá al jugador.
+
+   - **`OnEnable()`**
+      - Resetea el tiempo de vida del proyectil (`lifetime`) al valor de `maxLifetime` cuando se activa.
+
+   - **`Update()`**
+      - Mueve el proyectil hacia el objetivo si hay uno asignado.
+      - Reduce el tiempo de vida del proyectil. Si excede `maxLifetime`, el proyectil se devuelve al pool.
+
+   - **`SetTarget(Transform newTarget)`**
+      - Asigna un nuevo objetivo al proyectil, permitiendo que se dirija al jugador.
+
+   - **`SetDamage(float distance, float maxDamage, float minDamage, float maxDistance)`**
+      - Calcula el daño basado en la distancia entre el enemigo y el jugador utilizando interpolación lineal (`Mathf.Lerp`).
+
+   -  **`MoveTowardsTarget()`**
+      - Calcula la dirección hacia el objetivo y mueve el proyectil usando el componente `Rigidbody2D`.
+
+   - **`OnTriggerEnter2D(Collider2D collision)`**
+      - Detecta la colisión del proyectil con otros objetos.
+      - Si colisiona con el jugador:
+        - Aplica daño usando el componente `PlayerHealth`.
+        - Devuelve el proyectil al pool.
+
+   -  **`ReturnToPool()`**
+      - Desactiva el proyectil y lo devuelve al `ProjectilePoolManager`.
+    
+   La clase `ProjectilePoolManager` gestiona un pool de proyectiles para optimizar la creación y reutilización de objetos, evitando la sobrecarga de memoria y mejorando el rendimiento. (Assets/Scripts/Enemy/ProjectilePoolManager.cs)
 
 ---
 
